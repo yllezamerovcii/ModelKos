@@ -1,0 +1,110 @@
+.main1 {
+    background-image: url('../../../assets/Group\ 10.png');
+    background-size: cover; /* Ensure background image covers the container */
+    background-position: center; /* Center the background image */
+    margin-top: 1.667vw;
+    padding: 1.111vw; /* Add some padding for better spacing */
+    box-sizing: border-box; /* Ensure padding does not affect overall width */
+    height: 32.889vw;
+}
+
+.logo1 {
+    display: grid;
+    place-items: center; /* Center content horizontally and vertically */
+    padding-top: 3.8vw;
+}
+
+.Logo1{
+    width: 3.556vw;
+    height: 3.556vw;
+    content: url('../../../assets/Subtraction 2.png');
+}
+
+/* Text styles */
+.text1 {
+    color: white;
+    font-size: 3.2vw;
+    text-align: center; /* Center text on small screens */
+    line-height: 0.6;
+}
+
+.text1 .firstText1 {
+    position: relative; /* Enable relative positioning */
+    left: -17vw;
+}
+
+.text1 .secondText1 {
+    padding-left: 28.5vw;
+    text-align: center; /* Center text on small screens */
+    line-height: 1;
+}
+
+/* Foto styles */
+.foto1 {
+    position: absolute; /* Allows positioning relative to the nearest positioned ancestor */
+    z-index: 2; /* Ensure it's above text-overlay */
+    content: url('../../../assets/Group 12.png');
+    width: 8.611vw; 
+    position: relative; /* Allows positioning relative to the foto container */
+    top: -4.5vw; /* Move image up; adjust value as needed */
+    left: 6.2vw;
+    transition: transform 0.5s ease; /* Smooth transition for the rotation */
+}
+
+.foto1:hover {
+    transform: rotate(50deg); /* Adjust the angle as needed */
+}
+
+
+@media (max-width: 900px) {
+    .foto1{
+        display: none;
+    }
+    .Logo1{
+        width: 8vw;
+        height: 8vw;
+    }
+    .text1 {
+        text-align: center; /* Center text within the container */
+        font-size: 4vw; 
+    }
+    
+    .text1 .firstText1 {
+        position: relative; /* Enable relative positioning */
+        left: 50%; /* Move to the center horizontally */
+        transform: translateX(-50%); /* Adjust positioning to be centered */
+    }
+    
+    .text1 .secondText1 {
+        padding-left: 0; /* Remove left padding */
+        text-align: center; /* Center text within its own element */
+    }
+}
+
+@media (max-width: 600px) {
+    .main1 {
+        height: 38vw;
+    }
+    .text1 {
+        text-align: center; /* Center text within the container */
+        font-size: 4.5vw; 
+    }
+}
+
+@media (max-width: 450px) {
+    .main1 {
+        height: 70vw;
+    }
+    .Logo1{
+        width: 10vw;
+        height: 10vw;
+    }
+    .text1 {
+        font-size: 8vw; 
+    }
+    .text1 .firstText1,
+    .text1 .secondText1
+    {
+        line-height: 1;
+    }
+}

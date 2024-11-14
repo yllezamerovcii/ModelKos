@@ -1,0 +1,451 @@
+.apply-container {
+    margin-top: 7vw;
+    padding: 1.67vw;
+  }
+
+  .firstApply{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+  }
+  
+  .apply-left {
+    flex: 1;
+    padding-right: 1.67vw;
+    text-align: center;
+    margin-top: 2.5vw;
+  
+    h1 {
+      font-size: 6vw;
+      line-height: 0.7;
+      font-weight: normal;
+    }
+  
+    p {
+      font-size: 1rem;
+      line-height: 1.5;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .firstP{
+        margin-top: 2.5vw;
+    }
+  }
+
+  .apply-right {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  .apply-image1{
+    width: 7.5vw;
+    height: 7.5vw;
+    margin-left: -17%;
+    margin-top: 9%;
+  }
+  
+  .apply-image2 {
+    width: 35.2vw;
+    height: auto;
+    object-fit: cover;
+    margin-left: 20%;
+  }
+
+  .secondApply {
+    display: flex;
+    justify-content: space-between; 
+    gap: 1.67vw; 
+    margin-left: 5vw;
+
+    h2{
+      font-size: 2.3rem;
+    }
+  }
+
+  
+  .column {
+    flex: 1; 
+  }
+  
+  .label-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    width: 90%;
+    box-sizing: border-box;
+  }
+
+  .label-input.small {
+    margin-right: 10px;
+    margin-bottom: -15px;
+  }
+
+  .label-input.small:last-child {
+    margin-right: 0; 
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    margin-top: 20px;
+  }
+
+  .input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  input {
+    width: 90%;
+    flex: 1;
+    padding: 8px 40px 8px 15px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .unit {
+    position: absolute;
+    right: 35px;
+    padding-left: 10px;
+    font-size: 1rem;
+    color: #666;
+    border-left: 1px solid #ccc;
+    height: 100%; 
+    display: flex; 
+    align-items: center; 
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .dropdown-arroww {
+    position: absolute; /* Position the arrow inside the input */
+    top: 70%;
+    right: 12%;
+    transform: translateY(-50%); 
+    width: 10px; 
+    height: auto;
+    cursor: pointer; 
+  }
+
+  .dropdown-arrow {
+    position: absolute; /* Position the arrow inside the input */
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%); 
+    width: 10px; 
+    height: auto;
+    cursor: pointer; 
+  }
+
+  .messageInput {
+    height: 100px;
+  }
+  
+  .last label{
+    margin-top: 35.5px;
+  }
+
+  .last input {
+    background: none !important; 
+    height: 80px;
+  }
+  
+
+  .input-wrapperr {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 90%;
+    border: 1px solid #ccc;
+    padding: 10px; 
+    box-sizing: border-box; 
+    position: relative;
+  }
+  
+  .input-wrapperr::before {
+    content: "";
+    position: absolute;
+    top: 5px; 
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 1px dashed #aaa; 
+    pointer-events: none; 
+  }
+
+  .input-wrapperr input {
+    border: none; 
+    flex: 1; 
+    outline: none; 
+  }
+      
+  .upload-btn {
+    position: absolute;
+    right: 20px;
+    padding: 8px 15px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+
+  .additional-info {
+    margin-top: 20px; 
+    text-align: center; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+
+  }
+
+  input[type='number']::-webkit-outer-spin-button,
+  input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
+
+  input::placeholder {
+    color: rgb(74, 74, 74);
+  }
+
+  .submitInput{
+    background-color: #000000;
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    width: 40%;
+    font-size: 1rem;
+  }
+
+  .label-input {
+    position: relative; /* Necessary for positioning dropdown */
+  }
+  
+  .dropdown-list {
+    position: absolute;
+    top: 100%; /* Position dropdown below the input */
+    left: 0;
+    right: 0; /* Ensure dropdown takes full width */
+    background-color: white;
+    border: 1px solid #ccc;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1; /* Ensure it appears above other elements */
+    width: 90%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+  }
+  
+  .dropdown-list li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .dropdown-list li:hover {
+    background-color: #f0f0f0; /* Highlight on hover */
+  }
+
+  .dropdown-listt {
+    position: absolute;
+    top: 100%; /* Position dropdown below the input */
+    left: 0;
+    right: 0; /* Ensure dropdown takes full width */
+    background-color: white;
+    border: 1px solid #ccc;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    z-index: 1; /* Ensure it appears above other elements */
+    width: 71px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+  }
+  
+  .dropdown-listt li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .dropdown-listt li:hover {
+    background-color: #f0f0f0; /* Highlight on hover */
+  }
+  
+
+
+  @media(max-width: 1200px){
+    .unit {
+      padding-left: 5px;
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 1100px) {
+    .firstApply {
+      flex-direction: column; 
+      justify-content: center; 
+    }
+    .apply-left,
+    .apply-right {
+      flex-direction: column; 
+      align-items: center; 
+      text-align: center;
+    }
+
+    .apply-left{
+      h1 {
+        font-size: 8vw;
+      }
+      .firstP{
+          margin-top: 5vw;
+      }
+    }
+  
+    .secondApply {
+      margin-left: 0; 
+    }
+  
+    .apply-image1 {
+      display: none;
+    }
+  
+    .apply-image2 {
+      margin-left: 0;
+      width: 73%;
+    }
+
+    .secondApply {
+      flex-direction: column; /* Stack columns in a vertical row */
+      gap: 20px; /* Add some space between rows */
+      margin-left: 0; /* Reset any margin for better alignment */
+    }
+  
+    .column {
+      margin-left: 7%;
+      width: 85%; 
+    }
+
+    .label-row {
+      width: 100%;
+    }
+    input {
+      width: 100%; 
+    }
+    .input-wrapperr {
+      width: 100%;
+    }
+    .additional-info {
+      margin-top: 5%; 
+      margin-bottom: 5%;
+  
+    }  
+    .submit-button {
+      width: 60%;
+    }
+    .dropdown-arroww {
+      top: 70%;
+      right: 2%;
+    }
+  }
+
+  @media (max-width: 700px){
+    .apply-left{
+      h1 {
+        font-size: 10vw;
+      }
+    }
+  }
+
+  @media (max-width: 550px){
+    .secondApply {
+      h2{
+        font-size: 2rem;
+      }
+    }
+    input {
+      padding: 8px 40px 8px 6px;
+      font-size: 0.9rem;
+    }
+    .unit {
+      right: 20px;
+      padding-left: 4px;
+    }
+    .dropdown-arroww {
+      top: 70%;
+      right: 5%; 
+    }
+  }
+
+  @media (max-width: 450px){
+    .apply-container {
+      margin-top: 9vw;
+      .apply-left{
+        h1 {
+          font-size: 12vw;
+        }
+      }
+      input {
+        padding: 8px 40px 8px 15px;
+        font-size: 1rem;
+      }
+      .unit {
+        right: 35px;
+        padding-left: 10px;
+        font-size: 1rem;
+      }
+      .label-row {
+        flex-direction: column; /* Stack items vertically */
+        width: 100%; /* Ensure the container spans the full width */
+      }
+    
+      .label-input.small {
+        margin-bottom: 5px; /* Add space between items */
+        width: 100%; /* Ensure each item takes the full width */
+      }
+    
+      .label-input.small:last-child {
+        margin-right: 0;
+      }
+    }
+}
+
+  @media (max-width: 400px) {
+    .apply-container {
+      margin-top: 14.2vw;
+    }
+    .input-wrapperr {
+      display: block; 
+      width: 100%; 
+    }
+  
+    .input-wrapperr input {
+      width: 100%; 
+    }
+  
+    .upload-btn {
+      position: relative;
+      width: 90%; 
+      margin-left: 9vw;
+      margin-bottom: 2vw;
+    }
+  }
+
+  @media (max-width: 330px){
+    .apply-container {
+      margin-top: 15vw;
+    }
+      input {
+        padding: 8px 20px 8px 15px;
+        font-size: 1rem;
+      }
+  }

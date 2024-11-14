@@ -1,0 +1,193 @@
+.subscribe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.667vw;
+    background-image: url('../../../assets/Subscribe/Path 22.png');
+    background-size: cover; /* Adjusts the background image to cover the entire container */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    margin: 2.5vw 0;
+    height: 10vw;
+  }
+  
+  
+  .subscribe-header {
+    margin-top: 10vw;
+    font-size: 2.6vw;
+    margin-bottom: -4.8vw;
+    color: #333;
+    font-weight: normal;
+    text-align: center;
+  }
+  
+  .subscribe-paragraph {
+    font-size: 0.8vw;
+    margin-top: 2vw;
+    margin-bottom: 1.667vw;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .subscribe-row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 47.5vw;
+    margin-top: 1.6vw;
+  }
+  
+  .subscribe-input-container {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 0.833vw;
+    border: 1px solid #ccc;
+    border-radius: 0.417vw;
+  }
+  
+  .subscribe-input {
+    border: none;
+    background: none;
+    flex-grow: 1;
+    padding: 0 0.833vw;
+    font-size: 0.9vw;
+    height: 1.5vw;
+  }
+  
+  .subscribe-input:focus {
+    outline: none;
+  }
+  
+  .subscribe-button {
+    padding: 0.833vw 1.667vw;
+    background-color: rgb(28, 28, 28);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1vw;
+    border-radius: 0.417vw;
+    height: 3.2vw;
+  }
+  
+  .subscribe-button:hover {
+    background-color: #333;
+  }
+
+  @media (max-width: 1200px) {
+    .subscribe-container {
+      height: 18vw;
+    }
+    .subscribe-header {
+      margin-top: 10vw;
+      font-size: 3.2vw;
+    }
+    .subscribe-paragraph {
+      font-size: 1.2vw;
+    }  
+    .subscribe-input-container {
+      width: 90%;
+    }
+    .subscribe-input {
+      font-size: 1.2vw;
+      height: 3vw;
+    }
+    .subscribe-button {
+      width: 50%;
+      height: 4.7vw;
+      font-size: 1.2vw;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .subscribe-container {
+      height: 18vw;
+    }
+    .subscribe-header {
+      margin-top: 10vw;
+      font-size: 4vw;
+    }
+    .subscribe-paragraph {
+      font-size: 2vw;
+    }  
+    .subscribe-input-container {
+      width: 90%;
+    }
+    .subscribe-input {
+      font-size: 1.8vw;
+      height: 4vw;
+    }
+    .subscribe-button {
+      width: 50%;
+      height: 5vw;
+      font-size: 1.8vw;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .subscribe-container {
+      height: 18vw;
+    }
+    .subscribe-header {
+      margin-top: 10vw;
+      font-size: 5vw;
+    }
+    .subscribe-paragraph {
+      font-size: 2.2vw;
+    }  
+    .subscribe-input-container {
+      width: 90%;
+    }
+    .subscribe-input {
+      font-size: 2vw;
+      height: 4vw;
+    }
+    .subscribe-button {
+      width: 50%;
+      height: 5.5vw;
+      font-size: 2vw;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    .subscribe-header {
+      font-size: 8vw;
+      text-align: center;
+    }
+    .subscribe-paragraph {
+      font-size: 2.9vw;
+    } 
+    .subscribe-input-container {
+      height: 5.5vw;
+      width: 90%;
+      margin-left: -4vw;
+    }
+    .subscribe-input {
+      font-size: 2.7vw;
+    }
+    .subscribe-button {
+      height: 7vw;
+      font-size: 2.7vw;
+    }
+  }
+
+  @media (max-width: 350px) {
+    .subscribe-container {
+      height: 24vw;
+    }
+    .subscribe-header {
+      font-size: 6vw;
+    }
+    .subscribe-paragraph {
+      font-size: 2.6vw;
+    }  
+    .subscribe-input {
+      font-size: 2.6vw;
+    }
+    .subscribe-button {
+      height: 7.5vw;
+      font-size: 2.6vw;
+    }
+  }

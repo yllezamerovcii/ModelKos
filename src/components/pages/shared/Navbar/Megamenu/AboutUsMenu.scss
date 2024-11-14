@@ -1,0 +1,120 @@
+.about-us-menu {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 50%;
+    background: #fff;
+    color: black;
+    overflow: hidden;
+    justify-content: space-between;
+    padding: 1.5vw;
+    box-shadow: rgba(50, 50, 93, 0.1) 0px 6px 12px -2px, rgba(0, 0, 0, 0.15) 0px 3px 7px -3px;
+    display: flex;
+    z-index: 1000;
+    margin: 0 31.67vw;
+    height: 25vw;
+  }
+  
+  .first-part {
+    display: flex;
+    flex-direction: row;
+    gap: 9vw;
+  
+    .column {
+      display: flex;
+      flex-direction: column;
+  
+      h3 {
+        font-weight: normal;
+        margin-bottom: 0.77vw;
+      }
+  
+      p {
+        margin: 0.385vw 0;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 0.7vw;
+        line-height: 2.5;
+      }
+    }
+  }
+  
+  .second-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    .image-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 1.67vw;
+      margin-bottom: 1.67vw;
+      
+      .about-us-image {
+        width: 9.5vw;
+        position: relative;
+        display: flex; /* Ensures image takes full space */
+        align-items: center;
+        justify-content: center;
+      
+        img {
+          width: 100%; 
+          height: auto; 
+          object-fit: cover; 
+          display: block; 
+        }
+      }
+      
+      .image-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        padding: 0.83vw;
+        text-align: center;
+        box-sizing: border-box;
+      }
+      
+      .about-us-image:hover .image-overlay {
+        opacity: 1; 
+      }
+      
+  
+      .about-us-image:first-child {
+        top: 1.67vw;
+      }
+  
+      .about-us-image:last-child {
+        transform: rotate(25deg);
+        top: 4.17vw;
+        left: -4.17vw;
+      }
+  
+      .image-overlay p {
+        font-size: 1vw;
+        margin-bottom: 0.17vw;
+        line-height: 0;
+        color: rgb(255, 255, 255);
+        text-align: start;
+      }
+    }
+  
+    .action-button {
+      padding: 0.83vw 1.67vw;
+      background-color: rgb(28, 28, 28);
+      color: #fff;
+      border: none;
+      border-radius: 0.42vw;
+      cursor: pointer;
+      font-size: 0.8vw;
+      margin-top: 6.67vw;
+      margin-left: -2.5vw;
+    }
+  }
+  

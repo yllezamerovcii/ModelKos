@@ -1,0 +1,256 @@
+.galleryContainer {
+  margin-bottom: 11.5vw;
+}
+
+.title1 {
+  text-align: center;
+  font-size: 5.21vw;
+  font-weight: normal;
+  margin-top: 7.5vw;
+}
+.gallery {
+  padding: 0 3.5vw;
+  column-count: 4; /* Number of columns in masonry */
+  column-gap: 1.67vw; /* Gap between columns */
+  margin: 2.5vw;
+  width: 88%;
+  position: relative;
+}
+
+.gallery > div { /* Assuming each item in the gallery is a div */
+  display: inline-block;
+  width: 100%; /* Ensures items fit within columns */
+  margin-bottom: 1.5vw; /* Gap between items */
+}
+
+/* Base styles for gallery items */
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Overlay styles */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease-in-out; /* Smooth transition for the overlay */
+  z-index: 2; /* Ensure the overlay appears above the image */
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.overlay-title {
+  font-size: 1.5vw; /* Adjust as needed */
+  margin-bottom: 0.2vw; 
+}
+.overlay p{
+  line-height: 0.5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9vw;
+}
+
+.gallery-item-image{
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+/* Overlay container */
+.gallery-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0); /* Initially transparent */
+  transition: background-color 0.3s ease-in-out; /* Smooth transition for the overlay */
+  z-index: 1; /* Ensure the overlay appears above the image */
+}
+
+.gallery-item:hover::before {
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay on hover */
+}
+
+.Box {
+  position: relative;
+  padding-left: 1.3vw;
+  padding-right: 0.6vw;
+  box-sizing: border-box; /* Ensure padding is accounted for in total dimensions */
+}
+
+.FirstP {
+  font-size: 1.82vw;
+}
+
+.SecondP {
+  font-size: 0.78vw;
+  line-height: 2.4;
+  margin-top: -0.84vw; /* -10px in vw */
+  font-family: 'Montserrat', sans-serif;
+}
+
+.LogoImage {
+  width: 5.25vw;
+  margin-left: 12.95vw;
+  margin-top: -1vw;
+}
+
+.AllButton {
+  background-color: rgb(28, 28, 28);
+  color: white;
+  border-radius: 5%;
+  border: none;
+  font-size: 0.77vw;
+  font-family: 'Montserrat', sans-serif;
+  width: 9.16vw;
+  height: 2.66vw;
+  position: absolute;
+  top: 102%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the button */
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem; /* Space between icons */
+  margin-top: auto; // Push social icons to the bottom
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-around; // Align icons horizontally
+}
+
+.social-icon {
+  font-size: 1.4vw; /* Adjust size of the icons */
+  color: #ffffff; /* Change color as needed */
+  transition: color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.social-icon:hover {
+  color: #000000; /* Change color on hover (example color) */
+}
+
+@media (max-width: 900px) {
+  .galleryContainer {
+    margin-bottom: 20vw;
+  }
+  .gallery {
+    column-count: 2; /* 2 columns for screens smaller than 900px */
+  }
+  .overlay-title {
+    font-size: 3vw; /* Adjust as needed */
+    margin-bottom: 0.2vw; 
+  }
+  .overlay p{
+    line-height: 0.5;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8vw;
+  }
+  .social-icon {
+    font-size: 3vw; /* Adjust size of the icons */
+  }
+  .Box {
+    height: 41.5vw;
+  }
+  .FirstP {
+    font-size: 4vw;
+  }
+  
+  .SecondP {
+    font-size: 1.5vw;
+    line-height: 2.4;
+    margin-top: -0.84vw; /* -10px in vw */
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .LogoImage {
+    width: 11vw;
+    margin-left: 30vw;
+    margin-top: -2vw;
+  }
+  .AllButton {
+    font-size: 1.7vw;
+    width: 16vw;
+    height: 5vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .title1 {
+    font-size: 8vw; /* Adjust as needed */
+  }
+  .title {
+    text-align: center;
+    font-size: 8vw;
+    margin-top: 5vw;
+  }
+  .Box {
+    height: 42vw;
+  }
+  .FirstP {
+    font-size: 4.5vw;
+  }
+  .SecondP {
+    font-size: 1.8vw;
+  }
+  .AllButton {
+    width: 27vw;
+    height: 8vw;
+    font-size: 2.5vw;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .galleryContainer {
+    margin-bottom: 20vw;
+  }
+  .gallery {
+    column-count: 1; /* 2 columns for screens smaller than 900px */
+  }
+  .overlay-title {
+    font-size: 7vw; /* Adjust as needed */
+    margin-bottom: 0.2vw; 
+  }
+  .overlay p{
+    line-height: 0.5;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5vw;
+  }
+  .social-icon {
+    font-size: 5vw; /* Adjust size of the icons */
+  }
+  .Box {
+    height: 69vw;
+  }
+  .FirstP {
+    font-size: 6.5vw;
+  }
+  .SecondP {
+    font-size: 3.1vw;
+  }
+  .LogoImage {
+    width: 20vw;
+    text-align: center;
+    margin-bottom: 2vw;
+  }
+  .AllButton {
+    font-size: 3.1vw;
+    width: 30vw;
+    height: 7.5vw;
+    margin-top: -20vw;
+  }
+}

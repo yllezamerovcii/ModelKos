@@ -1,0 +1,344 @@
+.mainContainerr {
+    position: relative; /* To position the overlay absolutely within the container */
+    // box-sizing: border-box;
+    background-image: url('../../../assets/JoinAcademy/banner-3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 36.2vw;
+    width: 100%;
+    z-index: 1;
+}
+
+.mainContainerr::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1; 
+}
+
+.join-academy-carousel {
+    margin: 0 auto;
+    padding: 1.538vw;
+    position: relative;
+  }
+
+  .left-text h3 {
+    font-size: 8.5vw;
+    line-height: 0.24;
+    margin-top: 5vw;
+    margin-left: -58vw;
+    color: rgba(186, 186, 186, 0.5); /* Adjust alpha for desired transparency */
+    text-align: center;
+    font-weight: normal;
+}
+
+.right-content {
+    flex: 1; 
+    padding: 1.538vw 0; /* Add some padding for spacing */
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+}  
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // margin-bottom: -10vw;
+  }
+  
+  .logo {
+    content: url('../../../assets/JoinAcademy/Subtraction 6.png');
+    width: 2.5vw;
+    margin-right: 0.769vw;
+    margin-top: -59vw;
+  }
+  
+  .title {
+    margin-top: -58vw;
+    font-size: 1.5vw;
+    font-weight: normal;
+    color: white;
+  }
+  
+  .description {
+    text-align: center;
+    margin-top: -40.2vw;
+    margin-bottom: 1.7vw;
+    font-size: 0.78vw;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 20vw;
+    line-height: 2.7;
+  }
+  
+  .cta-button {
+    padding: 0.769vw 1.538vw;
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 0.385vw;
+    cursor: pointer;
+    font-size: 0.9vw;
+    width: 9vw;
+  }
+  
+    .rec-arrow {
+        display: none !important; // Hides default arrows
+    }
+
+    .custom-prev-arrow1 {
+        background: url('../../../assets/left.png') no-repeat center;
+        background-size: contain;
+        width: 2.6vw;
+        height: 2.6vw;
+        position: absolute;
+        left: 2.3vw;
+        top: 58%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        z-index: 1; /* Ensure arrows are clickable */
+      }
+  
+      .custom-next-arrow1 {
+        background: url('../../../assets/right.png') no-repeat center;
+        background-size: contain;
+        width: 2.6vw;
+        height: 2.6vw;
+        position: absolute;
+        right: 2.3vw;
+        top: 58%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        z-index: 1; /* Ensure arrows are clickable */
+    }
+
+    .pagination-dots1 {
+        display: flex;
+        justify-content: center;
+        margin-top: -12.8vw;
+        margin-bottom: 1.5vw;
+    }
+    
+    .dot1 {
+        width: 0.5vw;
+        height: 0.5vw;
+        border-radius: 50%;
+        background-color: #878787;
+        margin: 0 0.25vw;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .dot1.active {
+        background-color: #ffffff;
+        width: 0.7vw; // Increase the size of the dot when active
+        height: 0.7vw;
+        margin-top: -0.1vw;
+    }
+
+    @media (max-width: 1000px) { 
+      .logo {
+        width: 4vw;
+      }
+      
+      .title {
+        margin-top: -57vw;
+        font-size: 2.6vw;
+      }
+      
+      .description {
+        margin-top: -35vw;
+        font-size: 1.3vw;
+        line-height: 2;
+      }
+      
+      .cta-button {
+        font-size: 1.3vw;
+        width: 12vw;
+      }
+
+      .custom-prev-arrow1{
+        width: 3vw;
+        height: 3vw;
+        top: 52%;
+      }
+      .custom-next-arrow1 {
+        width: 3vw;
+        height: 3vw;
+        top: 52%;
+      }
+      .pagination-dots1 {
+        margin-top: -9vw;
+      }
+      .dot1 {
+        width: 0.7vw;
+        height: 0.7vw;
+      }     
+      .dot1.active {
+        width: 0.9vw; 
+        height: 0.9vw;
+      }
+    }
+
+    @media (max-width: 700px) { 
+      .mainContainerr {
+        height: 42vw;
+      }
+      .logo {
+        width: 5vw;
+        margin-top: -56vw;
+      }
+      
+      .title {
+        font-size: 3.3vw;
+        margin-top: -53vw;
+      }
+      
+      .description {
+        font-size: 1.8vw;
+        padding: 0 8vw;
+        margin-top: -28vw;
+      }
+      
+      .cta-button {
+        font-size: 1.8vw;
+        width: 15vw;
+      }
+
+      .custom-prev-arrow1{
+        width: 3.5vw;
+        height: 3.5vw;
+        top: 50%;
+      }
+
+      .custom-next-arrow1 {
+        width: 3.5vw;
+        height: 3.5vw;
+        top: 50%;
+      }
+      .pagination-dots1 {
+        margin-top: -4vw;
+      }  
+      .dot1 {
+        width: 0.8vw;
+        height: 0.8vw;
+      }
+      .dot1.active {
+        width: 1vw; 
+        height: 1vw;
+      }
+    }
+
+    @media (max-width: 550px) { 
+      .mainContainerr {
+        height: 70vw;
+      }
+      .left-text h3 {
+        display: none;
+      }
+      .logo {
+        width: 7vw;
+        margin-top: 3vw;
+      }
+      
+      .title {
+        font-size: 4.7vw;
+        margin-top: 7vw;
+      }
+      
+      .description {
+        font-size: 2.8vw;
+        padding: 0 8vw;
+        margin-top: -2vw;
+      }
+      
+      .cta-button {
+        font-size: 2.5vw;
+        width: 23vw;
+        height: 7vw;
+      }
+
+      .custom-prev-arrow1{
+        width: 5vw;
+        height: 5vw;
+        top: 50%;
+      }
+
+      .custom-next-arrow1 {
+        width: 5vw;
+        height: 5vw;
+        top: 50%;
+      }
+      .pagination-dots1 {
+        margin-top: 0vw;
+      }  
+      .dot1 {
+        width: 1.1vw;
+        height: 1.1vw;
+        margin: 0 0.5vw;
+      }
+      .dot1.active {
+        width: 1.3vw; 
+        height: 1.3vw;
+      }
+    }
+
+    @media (max-width: 450px) { 
+      .mainContainerr {
+        height: 102vw;
+      }
+      .logo {
+        width: 8vw;
+        margin-top: 2vw;
+        margin-left: -3.5vw;
+      }
+      
+      .title {
+        font-size: 6.8vw;
+        margin-top: 8vw;
+      }
+      
+      .description {
+        font-size: 3.5vw;
+        padding: 0 11.5vw 0 9vw;
+        margin-top: -3vw;
+      }
+      
+      .cta-button {
+        font-size: 3.2vw;
+        width: 28vw;
+        height: 9vw;
+      }
+
+      .custom-prev-arrow1{
+        width: 7vw;
+        height: 7vw;
+        top: 54%;
+        left: 1vw;
+      }
+
+      .custom-next-arrow1 {
+        width: 7vw;
+        height: 7vw;
+        top: 54%;
+        right: 1vw;
+      }
+      .pagination-dots1 {
+        margin-top: 0.2vw;
+      }  
+      .dot1 {
+        width: 1.5vw;
+        height: 1.5vw;
+        margin: 0 0.7vw;
+      }
+      .dot1.active {
+        width: 1.7vw; 
+        height: 1.7vw;
+      }
+    }

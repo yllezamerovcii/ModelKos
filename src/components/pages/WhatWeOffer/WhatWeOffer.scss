@@ -1,0 +1,422 @@
+.what-we-offer {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+  }
+  
+  .Card {
+    flex: 1 1 calc(25% - 20px); /* Adjust the gap dynamically */
+    border: 1px solid #bab9b9;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    position: relative; /* For positioning the button and overlay absolutely */
+    transition: background-color 0.3s ease;
+    height: 22.5vw; /* Set a fixed height or use min-height if needed */
+    padding: 0.556vw 0.556vw 0.556vw 1.3vw;
+    overflow: hidden; /* Ensure content doesn't overflow */
+  }
+  .Card-wrapper {
+    /* Add margin to create space between cards */
+    margin: 0 15px; /* Adjust the value as needed */
+  }
+  
+  .Card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 1; /* Ensure overlay is above the background image but below content */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease; /* Smooth transition for overlay appearance */
+  }
+  
+  .Card:hover::before {
+    opacity: 1; /* Show overlay on hover */
+  }
+  
+  .Card:hover {
+    background-image: url('../../../assets/What\ we\ offer/background.png'); /* Update the path to your hover image */
+    background-size: cover; /* Ensure the background image covers the entire card */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+  }
+  
+  .Card h3 {
+    text-align: left;
+    font-weight: normal;
+    font-size: 1.13vw;
+    margin-top: 2.8vw;
+    margin-left: -1vw;
+    font-family: 'Brown Sugar', cursive;
+    margin-bottom: 0.833vw;
+    color: rgb(65, 65, 65);
+    border-radius: 0.278vw; /* Optional: Rounded corners */
+  }
+  
+  .Card h2 {
+    display: none; /* Hide by default */
+    font-size: 2.1vw;
+    position: absolute;
+    top: -1.3vw; /* Adjust as needed */
+    right: 0.833vw; /* Adjust as needed */
+    color: rgb(90, 89, 89);
+    padding: 0vw 0.5vw; /* Optional: Add padding for better readability */
+    border-radius: 0.278vw; /* Optional: Rounded corners */
+    z-index: 3; /* Ensure h2 is above the overlay and h3 */
+  }
+  
+  .Card:hover h2 {
+    display: block; /* Show h2 on hover */
+  }
+  
+  .Card:hover p {
+    color: white;
+    z-index: 2;
+  }
+  
+  .Card:hover h3 {
+    color: white;
+    z-index: 2;
+  }
+  
+  .Card:hover button {
+    color: white;
+    z-index: 2;
+  }
+  
+  .image-containerRr{
+    width: 3vw;
+    height: 3vw;
+    padding-top: 2.3vw;
+    transition: background-image 0.3s ease;
+  }
+  
+  .cardText {
+    text-align: left;
+    margin-top: 0vw;
+    margin-bottom: 0.833vw; /* Add space below paragraphs */
+    margin-right: 0.4vw;
+    line-height: 2.3; /* Adjust line height for spacing between lines */
+    font-size: 0.79vw;
+    color: rgb(26, 25, 25);
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .buttons-container {
+    display: flex;
+    margin-top: auto; /* Pushes it to the bottom */
+    margin-bottom: 1.5vw;
+    margin-left: -0.3vw;
+    align-items: center;
+    justify-content: start;
+  }
+  
+  
+  .buttons-container button {
+    background-color: transparent;
+    color: black;
+    border: none;
+    font-size: 0.78vw;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 0.4vw; /* Space between buttons */
+  }
+  
+  .buttons-container img {
+    width: 1.3vw;
+    height: 0.45vw;
+    vertical-align: middle;
+    z-index: 10;
+  }
+  
+  /* See All Button */
+  .SeeAllButton {
+    background-color: rgb(28, 28, 28);
+    color: white;
+    width: 6.3vw;
+    height: 2.6vw;
+    border: none;
+    border-radius: 0.278vw;
+    margin-top: -0.3vw;
+    margin-bottom: 0.556vw;
+    font-size: 0.81vw;
+  }
+  
+  /* Title for the section */
+  .WhatWeOffer {
+    font-size: 5.2vw;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 2.222vw;
+    margin-bottom: 2.7vw;
+  }
+
+  .Carousel-container {
+    position: relative;
+  }
+
+  .pagination-dotss{
+    margin-top: 0.8vw;
+  }
+
+  .custom-prev-arroww {
+    background: url('../../../assets/left.png') no-repeat center;
+    background-size: contain;
+    width: 2.63vw;
+    height: 2.63vw;
+    position: absolute;
+    left: -2.75vw;
+    top: 54.4%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1; /* Ensure arrows are clickable */
+  }
+
+  .custom-next-arroww {
+    background: url('../../../assets/right.png') no-repeat center;
+    background-size: contain;
+    width: 2.63vw;
+    height: 2.63vw;
+    position: absolute;
+    right: -2.75vw;
+    top: 54.4%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1; /* Ensure arrows are clickable */
+  }
+
+  @media (max-width: 876px) {
+    .custom-prev-arroww {
+      width: 4vw; /* Adjust the size as needed */
+      height: 4vw; /* Adjust the size as needed */
+      left: -3vw; /* Adjust position if needed */
+      top: 48%;
+    }
+    .custom-next-arroww {
+      width: 4vw; /* Adjust the size as needed */
+      height: 4vw; /* Adjust the size as needed */
+      right: -3vw; /* Adjust position if needed */
+      top: 48%;
+    }
+  }
+
+  @media screen and (max-width: 1400px) {
+    .Card {
+      height: 28vw; /* Set a fixed height or use min-height if needed */
+    }
+    .Card h3 {
+      font-size: 1.8vw;
+    }
+    .cardText {
+      font-size: 0.95vw;
+    }
+    .buttons-container button {
+      font-size: 1vw;
+    }
+    .SeeAllButton {
+      width: 6.9vw;
+      height: 3.2vw;
+      font-size: 1.2vw;
+    }
+  }
+
+  @media screen and (max-width: 1025px) {
+    .Card {
+      height: 31vw; /* Set a fixed height or use min-height if needed */
+      padding: 0.556vw 0.556vw 0.556vw 3vw;
+    }
+    .Card h3 {
+      font-size: 2vw;
+    }
+    .cardText {
+      font-size: 1.2vw;
+    }
+    .buttons-container button {
+      font-size: 1.3vw;
+    }
+    .buttons-container img {
+      width: 1.7vw;
+      height: 0.7vw;
+    }
+    .SeeAllButton {
+      width: 6.9vw;
+      height: 3.2vw;
+      font-size: 1.2vw;
+    }
+  }
+  
+  @media screen and (max-width: 769px) {
+    .what-we-offer {
+      margin-top: 10vw;
+    }
+    .Card {
+      height: 40vw; /* Set a fixed height or use min-height if needed */
+      padding: 4vw 7vw 4vw 7vw;
+    }
+    .image-containerRr{
+      width: 6vw;
+      height: 6vw;
+      padding-top: 2.3vw;
+      transition: background-image 0.3s ease;
+    }
+    .Card h3 {
+      font-size: 3.2vw;
+    }
+    .Card h2 {
+      font-size: 5vw;
+    }
+    .cardText {
+      font-size: 1.7vw;
+    }
+    .buttons-container button {
+      font-size: 1.9vw;
+    }
+    .buttons-container img {
+      width: 2vw;
+      height: 1vw;
+    }
+    .SeeAllButton {
+      width: 10vw;
+      height: 4vw;
+      font-size: 1.6vw;
+      margin-top: 3vw;
+      margin-bottom: 6vw;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .Card {
+      height: 50vw; /* Set a fixed height or use min-height if needed */
+      padding: 4vw 8vw 4vw 8vw;
+    }
+    .image-containerRr{
+      width: 8vw;
+      height: 8vw;
+      padding-top: 3vw;
+      transition: background-image 0.3s ease;
+    }
+    .Card h3 {
+      font-size: 3.9vw;
+    }
+    .Card h2 {
+      font-size: 5.6vw;
+    }
+    .cardText {
+      font-size: 2.1vw;
+    }
+    .buttons-container {
+      margin-left: -1vw;
+    }
+    .buttons-container button {
+      font-size: 2.3vw;
+    }
+    .buttons-container img {
+      width: 2.6vw;
+      height: 1.3vw;
+    }
+    .SeeAllButton {
+      width: 17vw;
+      height: 6vw;
+      font-size: 2.3vw;
+    }
+    .custom-prev-arroww, .custom-next-arroww {
+      width: 5vw;
+      height: 5vw;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .WhatWeOffer {
+      margin-top: 15vw;
+      font-size: 8vw;
+    }
+  
+    .Card {
+      height: 58vw; /* Set a fixed height or use min-height if needed */
+      padding: 4vw 7vw 4vw 7vw;
+    }
+    .image-containerRr{
+      width: 8vw;
+      height: 8vw;
+      padding-top: 3vw;
+      transition: background-image 0.3s ease;
+    }
+    .Card h3 {
+      font-size: 5vw;
+    }
+    .Card h2 {
+      font-size: 8vw;
+    }
+    .cardText {
+      font-size: 2.8vw;
+    }
+    .buttons-container {
+      margin-left: -1vw;
+    }
+    .buttons-container button {
+      font-size: 3vw;
+    }
+    .buttons-container img {
+      width: 3.5vw;
+      height: 1.8vw;
+      margin-top: -2.7vw;
+    }
+    .SeeAllButton {
+      margin-top: 4vw;
+      width: 23vw;
+      height: 8vw;
+      font-size: 2.5vw;
+    }
+    .custom-prev-arroww, .custom-next-arroww {
+      width: 7vw;
+      height: 7vw;
+    }
+  }
+
+  @media screen and (max-width: 300px) {
+    .WhatWeOffer {
+      font-size: 9vw;
+    }
+  
+    .Card {
+      height: 70vw; /* Set a fixed height or use min-height if needed */
+      padding: 4vw 2vw 4vw 5vw;
+    }
+    .image-containerRr{
+      width: 12vw;
+      height: 12vw;
+      padding-top: 3vw;
+      transition: background-image 0.3s ease;
+    }
+    .Card h3 {
+      font-size: 6.5vw;
+    }
+    .cardText {
+      font-size: 3.8vw;
+    }
+    .buttons-container {
+      margin-left: -2vw;
+    }
+    .buttons-container button {
+      font-size: 3.8vw;
+    }
+    .buttons-container img {
+      width: 4.5vw;
+      height: 1.8vw;
+      margin-top: -2.7vw;
+    }
+    .SeeAllButton {
+      margin-top: 4vw;
+      width: 27vw;
+      height: 10vw;
+      font-size: 4vw;
+    }
+    .custom-prev-arroww, .custom-next-arroww {
+      width: 9vw;
+      height: 9vw;
+    }
+  }

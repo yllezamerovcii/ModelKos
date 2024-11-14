@@ -1,0 +1,63 @@
+.navbar {
+  display: flex;
+  justify-content: center; /* Center the navbar horizontally */
+  padding: 0.52vw 0; /* Convert 10px to vw */
+  margin-top: -3.5vw; /* Convert -65px to vw */
+
+  .tab-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 3.7vw; /* 63px ÷ 18 = 3.5vw */
+  }
+
+  .tab-item {
+    text-decoration: none;
+    color: rgb(31, 31, 31);
+    font-size: 0.84vw; /* 16px ÷ 18 = 0.89vw */
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 0.7vw;
+    position: relative;
+    cursor: pointer;
+    /* Remove any borders */
+    border: none;
+    outline: none; /* Remove outline when focused */
+  }
+
+  /* Use ::after for the underline */
+  .tab-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0; /* Hidden by default */
+    height: 0.1vw; /* 3px ÷ 18 = 0.17vw */
+    background-color: black;
+    border-radius: 0.56vw;
+    transition: width 0.3s ease; /* Smooth underline animation */
+  }
+
+  /* Show underline on hover */
+  .tab-item:hover::after {
+    width: 100%;
+  }
+
+  /* Show underline only on active, selected, or focused tab */
+  .tab-item.active::after,
+  .tab-item:focus::after,
+  .tab-item:active::after {
+    width: 100%; /* Expand underline on active */
+  }
+
+  @media screen and (max-width: 900px) {
+    .tab-item {
+      color: rgb(31, 31, 31);
+      font-size: 0.75em;
+    }
+
+    .tab-item::after {
+      height: 2px; /* Adjust underline thickness for smaller screens */
+    }
+  }
+}

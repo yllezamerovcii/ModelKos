@@ -1,0 +1,1345 @@
+/* styles.css or any relevant CSS file */
+.container1 {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    height: 820px;
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  
+  .left, .right {
+    position: relative; /* Ensure they stay above the overlay */
+    color: rgb(0, 0, 0); /* Text color for visibility against dark overlay */
+  }
+  
+  .left {
+    flex: 0 0 70%;
+    display: flex;
+    align-items: center; /* Center items vertically within .left */
+    justify-content: center; /* Center items horizontally within .left */
+    z-index: 4;
+    top: 11.5%;
+    position: relative; /* Make .left the positioning context for .leftt */
+
+
+    .FirstCircle-container {
+      position: relative; /* Relative positioning context for .WhiteArrow */
+
+    .FirstCircle {
+      width: 455px;
+      height: 455px;
+      margin-left: -788px;
+      margin-top: -399px;
+      content: url('../../../assets/Find Model/leftCircle.png');
+    }
+  }
+  
+  .leftt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 0; /* Adjust if needed */
+    margin-left: 0;
+    position: absolute; /* Position .leftt absolutely within .left */
+    left: 6.7%; /* Aligns .leftt to the left of .left */
+    z-index: 5; /* Ensure .leftt is above other elements in .left */
+}
+
+  .TheTitle{
+    font-size: 5.85em;
+    margin-top: -74px;
+  }
+  .TheTitle2{
+    margin-top: -74px;
+    margin-left: 312px;
+    font-size: 5.85em;
+  }
+  .left > div {
+    display: flex;
+    gap: 10px; /* Add some space between the buttons */
+  }
+}
+  
+  .right {
+    flex: 1;
+    display: flex;
+    z-index: 2;
+    justify-content: center; /* Align items to the left */
+    align-items: center;
+    position: relative; /* Positioning context for absolute positioning of images */
+    gap: 10px; /* Add space between the images */
+    top: 11%;
+  }
+  
+
+  .dropdown-container {
+    display: flex; /* Align children in a row */
+    margin-top: -53px;
+  }
+  
+  /* Button styling */
+  .dropdown {
+    display: flex;
+    flex-direction: column; /* Align icon and text vertically */
+    align-items: center; /* Center items horizontally */
+  }
+  
+  .FemaleModels, .FindLocation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between logo/text and arrow */
+    padding: 25px;
+    height: 63px;
+    background-color: transparent;
+    border: 1px solid rgb(152, 152, 152);
+    color: rgb(0, 0, 0); 
+    position: relative;
+    margin-right: 17px;
+    font-size: 0.85em;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .FemaleModels{
+    padding-left: 42px;
+    width: 318px;
+  }
+
+  .FindLocation{
+    width: 338px;
+  }
+
+  .arrow-icon {
+    content: url('../../../assets/Find Model/Path\ 19\ white.png');
+    margin-left: auto; /* Pushes the arrow to the right */
+    width: 8px;
+    height: 6px;
+    margin-right: 11px;
+  }
+
+  .LocationIcon{
+    height: 1.3em;
+    width: 13px;
+    padding-right: 20px;
+    content: url('../../../assets/Find Model/locationwhite.png');
+  }
+  
+  .PathIcon{
+    height: 1.3em;
+    width: 15px;
+    padding-right: 20px;
+    content: url('../../../assets/Find Model/pathwhite.png');
+  }
+
+  .FindModel {
+    width: 165px;
+    height: 63px;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid black;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .first-image {
+    content: url('../../../assets/Nav/first.png');
+    position: absolute;
+    width: 335px;
+    height: 393px;
+    z-index: 1; /* Ensures this image is below the second image */
+    left: -195px; 
+    top: 18.2%; 
+  }
+  
+  .second-image {
+    content: url('../../../assets/Nav/second.png');
+    position: absolute;
+    width: 335px;
+    height: 393px;
+    left: 55px;
+    top: 230px;
+    z-index: 2; /* Ensures this image is above the first image */
+    transform: rotate(25deg); /* Rotate the image 90 degrees to the right */
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+  }
+  
+  .second-image:hover {
+    transform: none;
+  }
+  
+  
+  .circle-container {
+    position: relative; /* Create a positioning context for the WhiteArrow */
+    width: 360px; /* Adjust size as needed */
+    height: 360px; /* Adjust size as needed */
+  }
+  
+  .circle {
+    content: url('../../../assets/Find Model/rightcircle.png');
+    width: 170px;
+    height: 170px; 
+    z-index: 3; /* Ensure this image is above other elements */
+    position: absolute; /* Ensure proper positioning */
+    left: -345px; /* Adjust to position the circle */
+    top: -136px; /* Adjust to position the circle */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for rotation */
+  }
+
+  .circle-container:hover .circle{
+    transform: rotate(50deg); /* Rotate the circle on hover */
+  }
+  
+  .WhiteArrow {
+    content: url('../../../assets/Find Model/arrow-left.png');
+    width: 37px; /* Adjust size as needed */
+    height: 19px; /* Adjust size as needed */
+    position: absolute; /* Absolute positioning within circle-container */
+    top: -16.5%; /* Adjust vertical positioning */
+    left: -76%; /* Adjust horizontal positioning */
+    z-index: 4; /* Ensure this is above other elements if needed */
+    transition: transform 0.3s ease; /* Adds smooth transition effect */
+  }
+
+  .circle-container:hover .WhiteArrow {
+    transform: scale(1.2);
+  }
+  
+  .PathIcon{
+    margin-left: -20px;
+  }
+
+  @media screen and (max-width: 1700px) {
+    .container1 {
+      height: 775px;
+      .left {
+        .FirstCircle-container {
+    
+          .FirstCircle {
+            width: 430px;
+            height: 430px;
+            margin-left: -745px;
+            margin-top: -374px;
+          }
+        }
+      }
+      .leftt{
+        .TheTitle{
+          font-size: 5.52em;
+          margin-top: -72px;
+        }
+        .TheTitle2{
+          margin-top: -68px;
+          margin-left: 294px;
+          font-size: 5.52em;
+        }
+        .arrow-icon {
+          margin-right: 6px;
+        }
+      }
+      .FemaleModels{
+        padding-left: 42px;
+        width: 300px;
+        height: 60px;
+        font-size: 0.81em;
+      }
+    
+      .FindLocation{
+        width: 317px;
+        height: 60px;
+        font-size: 0.81em;
+      }
+      .FindModel {
+        width: 155px;
+        height: 60px;
+        font-size: 0.85em;
+      }
+
+      .first-image {
+        width: 315px;
+        height: 373px;
+        left: -185px; /* Adjust to move the image more to the left */
+        top: 18%; 
+      }
+      
+      .second-image {
+        width: 315px;
+        height: 373px;
+        left: 51px;
+        top: 217px;
+      }
+
+      .circle {
+        width: 165px; /* Adjust the size as needed */
+        height: 165px; /* Adjust the size as needed */
+        left: -314px; /* Adjust to position the circle */
+        top: -124px; /* Adjust to position the circle */
+      }
+      
+      .WhiteArrow {
+        width: 35px; /* Adjust size as needed */
+        height: 19px; /* Adjust size as needed */
+        top: -13%; /* Adjust vertical positioning */
+        left: -69%; /* Adjust horizontal positioning */
+      }
+    }
+  }
+
+  @media screen and (max-width: 1600px) {
+    .container1 {
+      height: 730px;
+      .left {
+        .FirstCircle-container {
+    
+          .FirstCircle {
+            width: 400px;
+            height: 400px;
+            margin-left: -698px;
+            margin-top: -360px;
+          }
+        }
+      }
+      .leftt{
+        .TheTitle{
+          font-size: 5.2em;
+          margin-top: -69px;
+        }
+        .TheTitle2{
+          margin-top: -64px;
+          margin-left: 277px;
+          font-size: 5.2em;
+        }
+      }
+      .dropdown-container {
+        margin-top: -47px;
+      }
+      .FemaleModels{
+        padding-left: 42px;
+        width: 282px;
+        height: 55px;
+        font-size: 0.77em;
+      }
+    
+      .FindLocation{
+        width: 298px;
+        height: 55px;
+        font-size: 0.77em;
+      }
+      .FindModel {
+        width: 145px;
+        height: 57px;
+        font-size: 0.8em;
+      }
+      .LocationIcon{
+        height: 1.2em;
+        width: 12px;
+        padding-right: 15px;
+      }
+      
+      .PathIcon{
+        height: 1.2em;
+        width: 14px;
+        padding-right: 15px;
+      }
+      .first-image {
+        width: 295px;
+        height: 353px;
+        left: -174px; /* Adjust to move the image more to the left */
+        top: 18%; 
+      }
+      
+      .second-image {
+        width: 295px;
+        height: 353px;
+        left: 49px;
+        top: 204px;
+      }
+
+      .circle {
+        width: 157px; /* Adjust the size as needed */
+        height: 157px; /* Adjust the size as needed */
+        left: -290px; /* Adjust to position the circle */
+        top: -107px; /* Adjust to position the circle */
+      }
+      
+      .WhiteArrow {
+        width: 33px; /* Adjust size as needed */
+        height: 17px; /* Adjust size as needed */
+        top: -9.5%; /* Adjust vertical positioning */
+        left: -62%; /* Adjust horizontal positioning */
+      }
+    }
+  }
+  
+  @media screen and (max-width: 1500px) {
+    .container1 {
+      height: 685px;
+      .left {
+        .FirstCircle-container {
+          .FirstCircle {
+            width: 378px;
+            height: 378px;
+            margin-left: -655px;
+            margin-top: -335px;
+          }
+        }
+      }
+      .leftt{
+        .TheTitle{
+          font-size: 4.9em;
+          margin-top: -60px;
+        }
+        .TheTitle2{
+          margin-top: -60px;
+          margin-left: 260px;
+          font-size: 4.9em;
+        }
+      }
+      .dropdown-container {
+        margin-top: -47px;
+      }
+      .FemaleModels{
+        padding-left: 39px;
+        width: 266px;
+        height: 54px;
+        font-size: 0.72em;
+        margin-right: 14px;
+      }
+    
+      .FindLocation{
+        width: 282px;
+        height: 54px;
+        font-size: 0.72em;
+        margin-right: 14px;
+      }
+      .FindModel {
+        width: 135px;
+        height: 54px;
+        font-size: 0.72em;
+      }
+      .LocationIcon{
+        height: 1.2em;
+        width: 10px;
+        padding-right: 14px;
+      }
+      .PathIcon{
+        height: 1.2em;
+        width: 12px;
+        padding-right: 14px;
+      }
+      .first-image {
+        width: 278px;
+        height: 330px;
+        left: -164px; /* Adjust to move the image more to the left */
+        top: 18%; 
+      }
+      
+      .second-image {
+        width: 278px;
+        height: 330px;
+        left: 44px;
+        top: 191px;
+      }
+
+      .circle {
+        width: 145px; /* Adjust the size as needed */
+        height: 145px; /* Adjust the size as needed */
+        left: -255px; /* Adjust to position the circle */
+        top: -85px; /* Adjust to position the circle */
+      }
+      
+      .WhiteArrow {
+        width: 30px; /* Adjust size as needed */
+        height: 16px; /* Adjust size as needed */
+        top: -6%; /* Adjust vertical positioning */
+        left: -55%; /* Adjust horizontal positioning */
+      }
+    }
+  }
+
+  @media screen and (max-width: 1400px) {
+    .container1 {
+      height: 640px;
+      .left {
+        .FirstCircle-container {
+          .FirstCircle {
+            width: 357px;
+            height: 357px;
+            margin-left: -616px;
+            margin-top: -310px;
+          }
+        }
+      }
+      .leftt{
+        .TheTitle{
+          font-size: 4.55em;
+        }
+        .TheTitle2{
+          margin-top: -57px;
+          margin-left: 243px;
+          font-size: 4.55em;
+        }
+        .arrow-icon {
+          margin-right: 3px;
+          width: 5px;
+          height: 3px;
+        }
+      }
+      .dropdown-container {
+        margin-top: -40px;
+      }
+      .FemaleModels{
+        padding: 20px;
+        padding-left: 42px;
+        height: 50px;
+        width: 248px;
+        font-size: 0.67em;
+        margin-right: 13px;
+      }
+    
+      .FindLocation{
+        padding: 20px;
+        height: 50px;
+        width: 264px;
+        font-size: 0.67em;
+        margin-right: 13px;
+      }
+      .FindModel {
+        width: 130px;
+        font-size: 0.67em;
+        height: 50px;
+      }
+
+      .first-image {
+        width: 258px;
+        height: 305px;
+        left: -152px; /* Adjust to move the image more to the left */
+        top: 18%; 
+      }
+      
+      .second-image {
+        width: 258px;
+        height: 305px;
+        left: 40px;
+        top: 179px;
+      }
+
+      .circle {
+        width: 135px; /* Adjust the size as needed */
+        height: 135px; /* Adjust the size as needed */
+        left: -230px; /* Adjust to position the circle */
+        top: -70px; /* Adjust to position the circle */
+      }
+      
+      .WhiteArrow {
+        width: 28px; /* Adjust size as needed */
+        height: 15px; /* Adjust size as needed */
+        top: -2.5%; /* Adjust vertical positioning */
+        left: -48%; /* Adjust horizontal positioning */
+      }
+    }
+  }
+
+  @media screen and (max-width: 1300px) {
+    .container1 {
+      height: 590px;
+      .left {
+        .FirstCircle-container {
+          .FirstCircle {
+            width: 330px;
+            height: 330px;
+            margin-left: -570px;
+            margin-top: -285px;
+          }
+        }
+      }
+      .leftt{
+        .TheTitle{
+          margin-top: -54px;
+          font-size: 4.22em;
+        }
+        .TheTitle2{
+          margin-top: -52px;
+          margin-left: 225px;
+          font-size: 4.22em;
+        }
+      }
+      .dropdown-container {
+        margin-top: -35px;
+      }
+      .FemaleModels{
+        padding-left: 42px;
+        width: 230px;
+        height: 45px;
+        font-size: 0.6em;
+        margin-right: 13px;
+      }
+    
+      .FindLocation{
+        width: 245px;
+        height: 45px;
+        font-size: 0.6em;
+        margin-right: 13px;
+      }
+      .FindModel {
+        width: 120px;
+        height: 45px;
+        font-size: 0.6em;
+      }
+
+      .first-image {
+        width: 240px;
+        height: 285px;
+        left: -140px; /* Adjust to move the image more to the left */
+        top: 18%; 
+      }
+      
+      .second-image {
+        width: 240px;
+        height: 285px;
+        left: 40px;
+        top: 164px;
+      }
+
+      .circle {
+        width: 125px; /* Adjust the size as needed */
+        height: 125px; /* Adjust the size as needed */
+        left: -197px; /* Adjust to position the circle */
+        top: -50px; /* Adjust to position the circle */
+      }
+      
+      .WhiteArrow {
+        width: 27px; /* Adjust size as needed */
+        height: 14px; /* Adjust size as needed */
+        top: 2%; /* Adjust vertical positioning */
+        left: -41%; /* Adjust horizontal positioning */
+      }
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .container1 {
+      height: 545px;
+      .left {
+        .FirstCircle-container {
+          .FirstCircle {
+            width: 300px;
+            height: 300px;
+            margin-left: -524px;
+            margin-top: -265px;
+          }
+        }
+      }
+      .leftt{
+        .TheTitle{
+          margin-top: -50px;
+          font-size: 3.9em;
+        }
+        .TheTitle2{
+          margin-top: -49px;
+          margin-left: 208px;
+          font-size: 3.9em;
+        }
+      }
+      .dropdown-container {
+        margin-top: -30px;
+      }
+      .FemaleModels{
+        padding-left: 42px;
+        width: 212px;
+        height: 40px;
+        font-size: 0.6em;
+        margin-right: 11px;
+      }
+    
+      .FindLocation{
+        width: 226px;
+        height: 40px;
+        font-size: 0.6em;
+        margin-right: 11px;
+      }
+      .FindModel {
+        width: 110px;
+        height: 42px;
+        font-size: 0.6em;
+      }
+
+      .first-image {
+        width: 222px;
+        height: 262px;
+        left: -130px; /* Adjust to move the image more to the left */
+        top: 18%; 
+      }
+      
+      .second-image {
+        width: 222px;
+        height: 262px;
+        left: 35px;
+        top: 153px;
+      }
+
+      .circle {
+        width: 115px; /* Adjust the size as needed */
+        height: 115px; /* Adjust the size as needed */
+        left: -170px; /* Adjust to position the circle */
+        top: -33px; /* Adjust to position the circle */
+      }
+      .WhiteArrow {
+        width: 26px; /* Adjust size as needed */
+        height: 13px; /* Adjust size as needed */
+        top: 6%; /* Adjust vertical positioning */
+        left: -34%; /* Adjust horizontal positioning */
+      }
+    }
+  }
+
+  @media screen and (max-width: 1100px) {
+    .container1 {
+      height: 500px;
+      .left {
+        .FirstCircle-container {
+          .FirstCircle {
+            width: 275px;
+            height: 275px;
+            margin-left: -480px;
+            margin-top: -250px;
+          }
+        }
+      }
+      .leftt{
+        .TheTitle{
+          margin-top: -40px;
+          font-size: 3.58em;
+        }
+        .TheTitle2{
+          margin-top: -45px;
+          margin-left: 190px;
+          font-size: 3.58em;
+        }
+      }
+      .FemaleModels{
+        width: 190px;
+        height: 39px;
+        font-size: 0.5em;
+        margin-right: 11px;
+        padding: 18px;
+      }
+    
+      .FindLocation{
+        padding: 18px;
+        width: 210px;
+        height: 39px;
+        font-size: 0.5em;
+        margin-right: 11px;
+      }
+      .FindModel {
+        width: 100px;
+        height: 39px;
+        font-size: 0.5em;
+      }
+      .LocationIcon{
+        height: 1.1em;
+        width: 8px;
+        padding-right: 14px;
+      }
+      .PathIcon{
+        height: 1.1em;
+        width: 9px;
+        padding-right: 14px;
+      }
+      .first-image {
+        width: 205px;
+        height: 240px;
+        left: -120px; /* Adjust to move the image more to the left */
+        top: 18%; 
+      }
+      
+      .second-image {
+        width: 205px;
+        height: 240px;
+        left: 33px;
+        top: 140px;
+      }
+
+      .circle {
+        width: 105px; /* Adjust the size as needed */
+        height: 105px; /* Adjust the size as needed */
+        left: -155px; /* Adjust to position the circle */
+        top: -15px; /* Adjust to position the circle */
+      }
+      
+      .WhiteArrow {
+        width: 23px; /* Adjust size as needed */
+        height: 12px; /* Adjust size as needed */
+        top: 9%; /* Adjust vertical positioning */
+        left: -31%; /* Adjust horizontal positioning */
+      }
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .container1 {
+      height: 455px;
+      .left {
+        .FirstCircle-container {
+          .FirstCircle {
+            width: 250px;
+            height: 250px;
+            margin-left: -437px;
+            margin-top: -220px;
+          }
+        }
+      }
+      .leftt{
+        .TheTitle{
+          margin-top: -42px;
+          font-size: 3.25em;
+        }
+        .TheTitle2{
+          margin-top: -40px;
+          margin-left: 173px;
+          font-size: 3.25em;
+        }
+      }
+      .FemaleModels{
+        padding: 15px;
+        height: 35px;
+        padding-left: 33px;
+        width: 176px;
+        font-size: 0.5em;
+        margin-right: 9px;
+      }
+    
+      .FindLocation{
+        padding: 15px;
+        height: 35px;
+        width: 190px;
+        font-size: 0.5em;
+        margin-right: 11px;
+      }
+      .FindModel {
+        width: 90px;
+        height: 35px;
+        padding: 0px;
+        font-size: 0.5em;
+      }
+
+      .first-image {
+        width: 185px;
+        height: 220px;
+        left: -109px; /* Adjust to move the image more to the left */
+        top: 18%; 
+      }
+      
+      .second-image {
+        width: 185px;
+        height: 220px;
+        left: 30px;
+        top: 127px;
+      }
+
+      .circle {
+        width: 95px; /* Adjust the size as needed */
+        height: 95px; /* Adjust the size as needed */
+        left: -140px; /* Adjust to position the circle */
+        top: 2px; /* Adjust to position the circle */
+      }
+      
+      .WhiteArrow {
+        width: 21px; /* Adjust size as needed */
+        height: 11px; /* Adjust size as needed */
+        top: 13%; /* Adjust vertical positioning */
+        left: -28.5%; /* Adjust horizontal positioning */
+      }
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    .container1 {
+      height: 410px;
+      .left {
+        .FirstCircle-container {
+          .FirstCircle {
+            width: 225px;
+            height: 225px;
+            margin-left: -392px;
+            margin-top: -200px;
+          }
+        }
+      }
+      .leftt{
+        .TheTitle{
+          margin-top: -42px;
+          font-size: 2.92em;
+        }
+        .TheTitle2{
+          margin-top: -37px;
+          margin-left: 155px;
+          font-size: 2.92em;
+        }
+      }
+      .FemaleModels{
+        padding: 15px;
+        height: 31px;
+        padding-left: 33px;
+        width: 160px;
+        font-size: 0.4em;
+        margin-right: 9px;
+      }
+    
+      .FindLocation{
+        padding: 15px;
+        height: 31px;
+        width: 170px;
+        font-size: 0.4em;
+        margin-right: 11px;
+      }
+      .FindModel {
+        width: 85px;
+        height: 31px;
+        font-size: 0.4em;
+      }
+
+      .first-image {
+        width: 167px;
+        height: 197px;
+        left: -97px; /* Adjust to move the image more to the left */
+        top: 18%; 
+      }
+      
+      .second-image {
+        width: 167px;
+        height: 197px;
+        left: 28px;
+        top: 114px;
+      }
+
+      .circle {
+        width: 85px; /* Adjust the size as needed */
+        height: 85px; /* Adjust the size as needed */
+        left: -125px; /* Adjust to position the circle */
+        top: 20px; /* Adjust to position the circle */
+      }
+      
+      .WhiteArrow {
+        width: 18px; /* Adjust size as needed */
+        height: 10px; /* Adjust size as needed */
+        top: 16.5%; /* Adjust vertical positioning */
+        left: -25%; /* Adjust horizontal positioning */
+      }
+    }
+  }
+  @media screen and (max-width: 850px) {
+    .container1 {
+      display: flex;
+      flex-direction: column; /* Arrange children in a column */
+      align-items: center; /* Center content horizontally */
+      position: relative;
+      height: 650px;
+
+    .FirstCircle, .circle, .WhiteArrow{
+      display: none;
+    }
+    .left {
+      flex: 1;
+      position: absolute; /* Absolute positioning within the parent */
+      top: 33%; /* Center vertically */
+      left: 5%; /* Center horizontally */
+      width: 100%; /* Adjust width if needed */
+
+      .TheTitle{
+        font-size: 1.87em;
+        margin-top: -24px;
+        margin-left: 200px;
+      }
+
+      .TheTitle2{
+        font-size: 1.87em;
+        margin-top: -24px;
+        margin-left: 270px;
+      }
+
+      .dropdown-container {
+        display: flex; /* Align children in a row */
+        text-align: center;
+        justify-content: center;
+        margin-left: 4%;
+        margin-top: 0px;
+      }
+
+      .FemaleModels, .FindLocation {
+        width: 238px;
+        height: 40px;
+        margin-right: 8px;
+        padding: 12px;
+        font-size: 0.75em;
+      }
+      .arrow-icon{
+        width: 12px;
+        height: 8px;
+      }
+      .LocationIcon, .PathIcon{
+        padding-right: 10px;
+        width: 10px;
+      }
+
+      .FemaleModels{
+        padding-left: 30px;
+      }
+
+      .FindModel {
+        width: 105px;
+        height: 40px;
+        font-size: 0.75em;
+      }
+    } 
+    .first-image {
+      width: 140px;
+      height: 180px;
+      left: 52px; /* Adjust to move the image more to the left */
+      top: 38%;
+    }
+    
+    .second-image {
+      width: 140px;
+      height: 180px;
+      left: 120px;
+      top: 52%;
+    }
+  }
+  }
+
+ @media screen and (max-width: 800px) {
+  .container1 {
+    display: flex;
+    flex-direction: column; /* Arrange children in a column */
+    align-items: center; /* Center content horizontally */
+    position: relative;
+    height: 650px;
+
+  .left {
+    flex: 1;
+    position: absolute; /* Absolute positioning within the parent */
+    top: 33%; /* Center vertically */
+    left: 5%; /* Center horizontally */
+    width: 100%; /* Adjust width if needed */
+
+    .TheTitle{
+      margin-left: 193px;
+      margin-top: -28px;
+      font-size: 1.75em;
+    } 
+    .TheTitle2{
+      font-size: 1.75em;
+      margin-top: -23px;
+      margin-left: 262px;
+    }
+
+    .dropdown-container {
+      display: flex; /* Align children in a row */
+      text-align: center;
+      justify-content: center;
+      margin-left: 1.5%;
+      margin-top: -2px;
+    }
+
+    .FemaleModels, .FindLocation {
+      width: 234px;
+      // font-size: 0.7em;
+    }
+  }
+
+  .first-image{
+    left: 45px;
+    top: 38%;
+  }
+  .second-image {
+    left: 195px; /* Adjust to move the image more to the left */
+    top: 38%;
+    transform: none; /* Rotate the image 90 degrees to the right */
+  }
+  }
+ }
+
+@media screen and (max-width: 700px) {
+  .container1{
+    .left {
+      flex: 1;
+      position: absolute; /* Absolute positioning within the parent */
+      // top: 25%; /* Center vertically */
+      left: 0%; /* Center horizontally */
+      width: 100%; /* Adjust width if needed */
+
+      .TheTitle{
+        margin-left: 202px;
+        margin-top: -23px;
+        font-size: 1.55em;
+      } 
+      .TheTitle2{
+        font-size: 1.55em;
+        margin-top: -20px;
+        margin-left: 262px;
+      }
+
+      .dropdown-container {
+        display: flex; /* Align children in a row */
+        text-align: center;
+        justify-content: center;
+        margin-left: 1.5%;
+        margin-top: -2px;
+      }
+
+      .FemaleModels, .FindLocation {
+        width: 232px;
+      }
+      .FindModel {
+        width: 103px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+
+  .container1{
+
+    .left {
+      flex: 1;
+      position: absolute; /* Absolute positioning within the parent */
+      top: 29%; /* Center vertically */
+      left: 0%; /* Center horizontally */
+      width: 100%; /* Adjust width if needed */
+
+      .TheTitle{
+        margin-left: 180px;
+        margin-top: -25px;
+        font-size: 1.55em;
+      } 
+      .TheTitle2{
+        font-size: 1.55em;
+        margin-top: -20px;
+        margin-left: 238px;
+      }
+      .dropdown-container {
+        margin-left: -1.5%;
+        margin-top: -2px;
+      }
+      .FemaleModels, .FindLocation {
+        width: 228px;
+        margin-right: 6px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .container1{
+    .left {
+      .FemaleModels, .FindLocation {
+        width: 218px;
+        margin-right: 6px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container1{
+
+    .left {
+      flex: 1;
+      position: absolute; /* Absolute positioning within the parent */
+      top: 40%; /* Center vertically */
+      left: 0%; /* Center horizontally */
+      width: 100%; /* Adjust width if needed */
+
+      .TheTitle{
+        margin-left: 160px;
+        margin-top: -30px;
+      } 
+      .TheTitle2{
+        margin-top: -20px;
+        margin-left: 215px;
+      }
+      .dropdown-container {
+        margin-left: -2.2%;
+        width: 100vw; 
+        max-width: 90%;
+        display: flex;
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 6px; /* Optional: Space between buttons */
+        margin-top: -5px;
+      }
+      .FemaleModels, .FindLocation {
+        width: 90%;
+        box-sizing: border-box;
+        width: 100%;
+        margin-right: 0;
+        height: 42px;
+      }
+      .arrow-icon{
+        height: 8px;
+      }
+      .FindModel{
+        width: 100%;
+        height: 42px;
+      }
+    }
+    .first-image, .second-image{
+      top: 48%;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .container1{
+
+    .left {
+      .TheTitle{
+        margin-left: 138px;
+        margin-top: -40px;
+      } 
+      .TheTitle2{
+        margin-top: -20px;
+        margin-left: 190px;
+      }
+      .arrow-icon{
+        height: 8px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container1{
+
+    .left {
+
+      .TheTitle{
+        margin-left: 110px;
+        margin-top: -25px;
+        font-size: 1.55em;
+      } 
+      .TheTitle2{
+        font-size: 1.6em;
+        margin-top: -20px;
+        margin-left: 170px;
+      } 
+    }
+  }
+}
+
+
+@media screen and (max-width: 450px) {
+  .container1{
+    .left {
+      .TheTitle{
+        margin-left: 95px;
+        margin-top: -35px;
+        font-size: 1.53em;
+      } 
+      .TheTitle2{
+        font-size: 1.53em;
+        margin-top: -20px;
+        margin-left: 145px;
+      }
+      .dropdown-container {
+        gap: 4px; /* Optional: Space between buttons */
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container1{
+
+    .left {
+      top: 37%;
+
+      .TheTitle{
+        margin-left: 73px;
+      } 
+      .TheTitle2{
+        margin-left: 120px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .container1{
+    height: 500px;
+    .left {
+      top: 40%;
+
+      .TheTitle{
+        margin-left: 43px;
+        margin-top: -25px;
+      } 
+      .TheTitle2{
+        margin-top: -20px;
+        margin-left: 87px;
+      }
+    }
+    .first-image, .second-image{
+      top: 51.6%;
+      width: 125px;
+      height: 170px;
+    }
+  }
+}
+
+body.dark-mode{
+  .container1 {
+    background-image: url('../../../assets/Nav/pexels-pixabay-247204.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+  }
+
+  .container1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../assets/Find Model/Rectangle\ 33.png');/* Semi-transparent overlay color */
+    z-index: 1; /* Ensure it covers the background but is behind content */
+  }
+
+  .left, 
+  .right,
+  .FemaleModels,
+  .FindLocation
+  {
+    color: rgb(255, 255, 255); 
+  }
+
+  .FindModel {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    color: rgb(54, 53, 53);
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .PathIcon{
+    content: url('../../../assets/Find Model/Path 20.png');
+  }
+  .arrow-icon {
+    content: url('../../../assets/Find Model/Path 19.png');
+  }
+  .LocationIcon{
+    content: url('../../../assets/Find Model/2216335_location_map_map pin_marker_pin_icon.png');
+  }
+  .circle {
+    content: url('../../../assets/Find Model/leftimage1.png');
+  }
+  .left {
+    .FirstCircle {
+      content: url('../../../assets/Nav/MODELKOS - AGENCY - MODELING - ACADEMY-.png');
+    }
+  }
+}
+

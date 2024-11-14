@@ -1,0 +1,295 @@
+.kosova-girls-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8.333vw;
+    padding-bottom: 8.333vw;
+  }
+  
+  .kosova-girls-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.778vw;
+    margin-left: -0.556vw;
+  }
+  
+  .kosova-girls-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.111vw;
+  }
+  
+  .kosova-girls-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 0.556vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 6.111vw;
+    width: 66.5%;
+    margin-left: 20%;
+    margin-top: -0.556vw;
+    position: relative; /* Needed for overlay positioning */
+  }
+
+  .kosova-girls-box:hover{
+    .kosova-girls-logo{
+      transform: scale(1.3);
+    }
+  }
+  
+  .kosova-girls-box::before {
+    content: ''; /* Empty content for pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.45;
+    transition: opacity 0.3s ease;
+    z-index: 1; 
+  }
+
+  .kosova-girls-box:hover::before {
+    opacity: 0.8; /* Show overlay on hover */
+  }
+  
+  .kosova-girls-text {
+    color: white;
+    font-size: 2.08vw;
+    position: relative; /* Position relative to ensure text is above the overlay */
+    z-index: 2; /* Ensure text is above the overlay */
+    padding-left: 2.556vw;
+  }
+  
+  .kosova-girls-logo{
+    content: url('../../../assets/KosovaGirls/arrow-left.png');
+    width: 1.65vw;
+    z-index: 2;
+    padding-right: 2.444vw;
+    transition: transform 0.3s ease;
+  }
+  
+  .kosova-girls-box.fashion {
+    background-image: url('../../../assets/KosovaGirls/jernej-graj-IbrSR6gBaqI-unsplash.png');
+  }
+  
+  .kosova-girls-box.hairstyling {
+    background-image: url('../../../assets/KosovaGirls/oladimeji-odunsi-n5aE6hOY6do-unsplash.png');
+  }
+  
+  .kosova-girls-box.photography {
+    background-image: url('../../../assets/KosovaGirls/alif-ngoylung-jg-6ARMiaPM-unsplash.png');
+  }
+  
+  .kosova-girls-box.acting {
+    background-image: url('../../../assets/KosovaGirls/miguel-angel-hernandez-4Kmvlc1M9rU-unsplash.png');
+  }
+  
+  .kosova-girls-logoo {
+    content: url('../../../assets/KosovaGirls/Scroll Group 1.png');
+    width: 16vw;
+    margin-top: -0.556vw;
+    margin-left: -0.5vw;
+  }
+  
+  .kosova-girls-subheader {
+    font-size: 4vw;
+    font-weight: normal;
+    margin-top: 0.278vw;
+    padding-right: 11.111vw;
+    line-height: 1.5;
+  }
+  
+  .kosova-girls-paragraph {
+    font-size: 0.78vw;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: -3.056vw;
+    margin-bottom: 2.389vw;
+    line-height: 2.6;
+    padding-right: 2.389vw;
+  }
+  
+  .kosova-girls-button {
+    padding: 0.556vw 1.111vw;
+    background-color: rgb(28, 28, 28);
+    color: white;
+    border: none;
+    border-radius: 0.278vw;
+    cursor: pointer;
+    width: 9vw;
+    height: 3vw;
+    font-size: 0.889vw;
+  }
+  
+  .kosova-girls-image {
+    width: 100%; /* Adjust based on your design needs */
+    height: auto;
+    border-radius: 0.444vw;
+  }
+
+  body.dark-mode{
+    .kosova-girls-box {
+      border: 1px solid #000000;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .kosova-girls-paragraph {
+      font-size: 1.1vw; /* Adjust paragraph font size */
+    }
+    .kosova-girls-button {
+      width: 11vw;
+      height: 3.8vw;
+      font-size: 1.1vw;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .kosova-girls-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .kosova-girls-left,
+    .kosova-girls-right {
+      flex: none;
+      width: 100%;
+    }
+  
+    .kosova-girls-right {
+      display: flex; /* Enable flexbox for this container */
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items horizontally */
+      margin-top: 1.2vw;
+      text-align: center;
+      margin-left: 0vw;
+    }
+  
+    .kosova-girls-box {
+      margin-left: 2.5vw; /* Remove left margin for smaller screens */
+      width: 95%; /* Adjust width to fit smaller screens */
+    }
+  
+    .kosova-girls-subheader {
+      padding-right: 0vw;
+    }
+  
+    .kosova-girls-paragraph {
+      font-size: 1.3vw; /* Adjust paragraph font size */
+      padding-right: 2vw;
+      padding-left: 2vw;
+    }
+  
+    .kosova-girls-button {
+      width: 13vw;
+      height: 5vw;
+      font-size: 1.3vw;
+    }
+  
+    .kosova-girls-logoo {
+      width: 20vw;
+      margin: 0 auto; 
+    }
+  }
+  
+  
+  @media (max-width: 900px) {
+    .kosova-girls-button {
+      width: 14vw;
+      height: 5vw;
+      font-size: 1.5vw;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .kosova-girls-box {
+      height: 7.9vw;
+    }
+    .kosova-girls-text {
+      font-size: 1.125em; /* Adjust text size for smaller screens */
+    }
+    .kosova-girls-paragraph {
+      font-size: 0.7em; /* Adjust paragraph font size */
+    }
+    .kosova-girls-logoo {
+      width: 20vw;
+      margin: 0 auto; 
+    }
+  }
+
+  @media (max-width: 500px) {
+    .kosova-girls-box {
+      height: 9.5vw;
+    }
+    .kosova-girls-paragraph {
+      font-size: 0.6em; 
+    }
+    .kosova-girls-button {
+      width: 18vw;
+      height: 6vw;
+      font-size: 2vw;
+    }
+    .kosova-girls-logoo {
+      width: 27vw;
+      margin: 0 auto; 
+    }
+  }
+
+  @media (max-width: 450px) {
+    .kosova-girls-box {
+      height: 12vw;
+    }
+    .kosova-girls-box img {
+      width: 4vw;
+    }
+    .kosova-girls-paragraph {
+      font-size: 2.9vw; 
+    }
+    .kosova-girls-logoo {
+      width: 30vw;
+      margin-top: -0.556vw;
+    }
+    
+    .kosova-girls-subheader {
+      font-size: 8vw;
+      margin-top: 0.278vw;
+      padding-right: 0;
+    }
+
+    .kosova-girls-button {
+      width: 25vw;
+      height: 8vw;
+      font-size: 2.9vw;
+    } 
+  }
+
+  @media (max-width: 350px) {
+    .kosova-girls-box {
+      height: 15vw;
+    }
+    .kosova-girls-box img {
+      width: 6vw;
+    }
+    .kosova-girls-paragraph {
+      font-size: 3.1vw; 
+    }
+    .kosova-girls-logoo {
+      width: 35vw;
+    }
+    
+    .kosova-girls-subheader {
+      font-size: 10vw;
+    }
+
+    .kosova-girls-button {
+      width: 30vw;
+      height: 8.5vw;
+      font-size: 3.1vw;
+    } 
+  }

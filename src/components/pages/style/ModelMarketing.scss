@@ -1,0 +1,375 @@
+// ModelMarketing.scss
+
+/* Container for the whole component */
+.wholeContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.538vw;
+  height: 20vw;
+  margin-top: 13.3vw;
+  margin-bottom: 12.2vw;
+}
+
+
+/* Styling for the first section (left side) */
+.MMfirst {
+  width: 60%;
+  padding: 1.538vw;
+  margin-left: 3.5vw;
+}
+
+.MMfirst p:first-of-type {
+  font-size: 4.3vw; 
+  border: none; /* Ensure no border */
+  margin-top: -5vw;
+  justify-content: start;
+}
+
+.paragraph {
+  margin-left: -0.3vw;
+  margin-right: 9.5vw;
+  color: rgb(20, 20, 20);
+  font-size: 0.78vw;
+  line-height: 2.7;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: -3.4vw;
+}
+
+/* Adjusted layout to place .first > div under the paragraph and closer to the left */
+.MMfirst > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; /* Aligns divs to the left */
+  gap: 3.077vw;
+  padding-top: 10.7%;
+}
+
+.MMfirst > div > div {
+  margin-right: 2.5vw; /* Adjust spacing between the divs */
+  margin-top: 2.308vw;
+}
+
+.MMfirst > div > div p:first-of-type {
+  margin-left: -0.3vw;
+  font-size: 1.82vw;
+  color: #807f7f;
+}
+
+.MMfirst > div > div p:last-of-type {
+  font-size: 0.78vw;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(81, 80, 80);
+  margin-top: -1vw;
+  margin-left: -0.3vw;
+}
+
+/* Styling for the second section (right side) */
+.MMsecond {
+  width: 40%;
+  padding: 1.538vw;
+  position: relative; /* Relative positioning for child elements */
+}
+
+/* Bar styling */
+.bar {
+  display: flex;
+  justify-content: space-around; /* Align items horizontally */
+  position: absolute;
+  top: 17.5vw; /* Position above the images */
+  left: -8.5vw;
+  width: 86.8%; /* Stretch bar across the width */
+  height: 4.4vw;
+  padding: 0.4vw;
+  border: 1px solid rgb(192, 189, 189);
+  border-radius: 3.846vw;
+  z-index: 4;
+  background-color: white;
+}
+
+.bar div {
+  color: rgb(24, 23, 23);
+  font-size: 0.8vw;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.bar img {
+  width: 1.2vw;
+  margin-top: 0.769vw;
+  margin-bottom: -0.538vw;
+}
+
+/* Image styles */
+.firstImgg {
+  content: url('../../../assets/chyntia-juls-HlVjI5WmoQY-unsplash.png');
+  position: absolute; /* Relative positioning for stacking context */
+  z-index: 1; /* Base image */
+  width: 18.6vw;
+  top: -1.8vw;
+  left: -2.95vw;
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.firstImgg:hover {
+  transform: scale(1.1); /* Grow the image by 10% on hover */
+  z-index: 3;
+}
+
+
+.secondImgg {
+  content: url('../../../assets/adele-shafiee-vagr_XT9Cms-unsplash.png');
+  position: absolute;
+  top: 2.7vw; /* Position on top of firstImg */
+  left: 11vw; /* Align with firstImg */
+  z-index: 2; /* Layer above firstImg */
+  width: 18.6vw;
+  transform: rotate(25deg); /* Rotate the image 90 degrees to the right */
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.secondImgg:hover{
+  transform: none;
+}
+
+.thirdImgg {
+  content: url('../../../assets/text.png');
+  position: absolute;
+  top: -5.6vw; /* Position at the top of the container */
+  left: -5.8vw; /* Align with firstImg */
+  z-index: 4; /* Layer above both firstImg and secondImg */
+  width: 9.3vw;
+}
+
+.MMsecond:hover .thirdImgg {
+  transform: rotate(50deg); /* Rotate the circle on hover */
+}
+
+.theArrowg{
+  content: url('../../../assets/theArrow.png');
+  position: absolute;
+  top: -2.15vw; /* Position at the top of the container */
+  left: -3.1vw; /* Align with firstImg */
+  z-index: 4; /* Layer above both firstImg and secondImg */
+  width: 4vw;
+}
+
+.MMsecond:hover .theArrowg {
+  transform: scale(1.3); /* Grow the arrow on hover */
+}
+
+
+@media screen and (max-width: 1000px) {
+  .wholeContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5.882vw;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 73vw;
+    margin-bottom: 8vw;
+  }
+
+  .MMfirst {
+    width: 100%;
+    text-align: center;
+    margin-left: 0vw;
+  }
+
+  .MMfirst p:first-of-type {
+    display: inline-block;
+    margin-left: 0vw;
+  }
+
+  .MMfirst > div > div p:first-of-type {
+    font-size: 2.4vw;
+  }
+  
+  .MMfirst > div > div p:last-of-type {
+    font-size: 1.2vw;
+  }
+
+  .paragraph {
+    color: rgb(20, 20, 20);
+    font-size: 1.2vw;
+    line-height: 2.5;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 2vw;
+    margin-right: 4.5vw;
+  }
+
+  .MMfirst > div {
+    justify-content: center;
+    padding-top: 2%;
+    gap: 2.353vw;
+  }
+  .MMsecond{
+    width: 100%;
+    padding-top: 40vw;
+
+    .theArroww, .thirdImgg{
+      display: none;
+    }
+
+    .firstImgg {
+      width: 22.353vw;
+      height: 27.059vw;
+      left: 28.235vw;
+      top: 1.765vw;
+    }
+  
+    .secondImgg {
+      width: 22.353vw;
+      height: 27.059vw;
+      left: 44.706vw;
+      top: 8.235vw;
+    }
+  }
+  .bar {
+    left: 23vw;
+    width: 45%;
+    top: 27vw;
+  }
+  .bar div {
+    font-size: 0.9vw;
+  }
+}
+
+@media screen and (max-width: 800px){
+  .wholeContainer{
+    height: 81vw;
+  }
+  .MMfirst p:first-of-type {
+    font-size: 5.3vw; /* Or whatever size you prefer */
+  }
+  .paragraph {
+    font-size: 1.5vw;
+  }
+  .MMfirst > div > div p:first-of-type {
+    font-size: 3.3vw;
+  }
+  
+  .MMfirst > div > div p:last-of-type {
+    font-size: 1.5vw;
+  }
+  .MMsecond{
+    .firstImgg {
+      left: 27vw;
+      top: 1.765vw;
+    }
+    .secondImgg {
+      transform: none; /* Rotate the image 90 degrees to the right */
+      left: 51vw;
+      top: 1.765vw;
+    }
+    .bar {
+      left: 27vw;
+      width: 45%;
+      top: 28vw;
+      height: 5.5vw;
+    }
+    .bar div {
+      font-size: 1.4vw;
+    }
+  }
+}
+
+@media screen and (max-width: 700px){
+  .wholeContainer{
+    height: 100vw;
+  }
+  .MMfirst p:first-of-type {
+    font-size: 6.2vw; /* Or whatever size you prefer */
+  }
+  .paragraph {
+    font-size: 1.7vw;
+  }
+  .MMsecond{
+    .firstImgg {
+      width: 45vw;
+      height: auto;
+      left: 2vw;
+      top: 1.765vw;
+    }
+    .secondImgg {
+      transform: none; /* Rotate the image 90 degrees to the right */
+      width: 45vw;
+      height: auto;
+      left: 48vw;
+      top: 1.765vw;
+    }
+    .bar {
+      left: 10vw;
+      width: 80%;
+      height: 7vw;
+      top: 35vw;
+    }
+    .bar img {
+      width: 1.8vw;
+    }
+    .bar div {
+      font-size: 1.9vw;
+    }
+  }
+}
+
+@media screen and (max-width: 450px){
+  .wholeContainer{
+    height: 170vw;
+  }
+  .MMfirst p:first-of-type {
+    font-size: 8vw;
+  }
+  .paragraph {
+    font-size: 2.9vw;
+  }
+  .MMfirst > div > div p:first-of-type {
+    font-size: 5vw;
+  }
+  
+  .MMfirst > div > div p:last-of-type {
+    font-size: 2.5vw;
+  }
+  .MMsecond{
+    .bar {
+      height: 11vw;
+      top: 32vw;
+    }
+    .bar img {
+      width: 2.9vw;
+    }
+    .bar div {
+      font-size: 2.9vw;
+    }
+  }
+}
+
+@media screen and (max-width: 350px){
+  .wholeContainer{
+    height: 190vw;
+  }
+  .MMfirst p:first-of-type {
+    font-size: 10vw;
+  }
+  .paragraph {
+    font-size: 3.1vw;
+  }
+  .MMfirst > div > div p:first-of-type {
+    font-size: 6vw;
+  }
+  
+  .MMfirst > div > div p:last-of-type {
+    font-size: 2.9vw;
+  }
+  .MMsecond{
+    .bar {
+      height: 12vw;
+    }
+    .bar img {
+      width: 3.1vw;
+    }
+    .bar div {
+      font-size: 3.1vw;
+    }
+  }
+}

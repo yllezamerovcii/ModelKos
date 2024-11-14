@@ -1,0 +1,252 @@
+.carousel-containerrr {
+  position: relative;
+  width: 100%;
+  background-image: url('../../../assets/Rectangle 9.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-with-text {
+  position: relative;
+  text-align: center;
+  width: 100vw;
+  height: 50vw;
+  padding: 1.11vw;
+}
+
+.images-containerr {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.first-imagee{
+  content: url('../../../assets/kida1.png');
+  width: 29.94vw;
+  height: 39.06vw;
+  position: absolute;
+  left: 26.7vw;
+  top: -6.87vw;
+  transform: translate(-50%, 11.3vw);
+}
+
+.second-imagee {
+  content: url('../../../assets/kida2.png'); 
+  width: 26.83vw;
+  height: 34.17vw;
+  position: absolute;
+  left: 40.65vw;
+  top: -21.75vw;
+  transform: translate(50%, 33vw);
+}
+
+.circlee {
+  content: url('../../../assets/Footer/MODELkos - Instagram - agency - modeling - - photography-.png');;
+  position: absolute;
+  left: 75.8vw;
+  top: 5.95vw;
+  width: 9.62vw;
+}
+
+.arrowW {
+  content: url('../../../assets/theArrow.png');
+  position: absolute;
+  left: 78.5vw;
+  top: 9.7vw;
+  width: 4vw;
+  height: 2.3vw;
+}
+
+.teksti {
+  position: absolute;
+  top: -15.5vw;
+  left: 48.05vw;
+  transform: translateX(-50%);
+  color: rgb(87, 87, 87);
+  text-align: center;
+  font-size: 14vw;
+}
+
+.firstt {
+  margin-left: -19.11vw;
+}
+
+.secondt {
+  margin-top: -15.202vw;
+  margin-left: 33.06vw;
+}
+
+.Text-Overlay {
+  position: absolute;
+  top: 26.1vw;
+  left: 51.1vw;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 1.11vw;
+  border-radius: 0.56vw;
+  font-size: 2vw;
+  z-index: 4;
+}
+
+.textt {
+  color: white;
+  font-size: 6.7vw;
+
+  :nth-child(2) {
+    margin-left: -18.64vw;
+    margin-top: -12.8vw;
+    position: absolute;
+  }
+
+  .firstT {
+    position: absolute;
+    margin-left: -40.7vw;
+    margin-top: -25.44vw;
+  }
+
+  .thirdT {
+    position: absolute;
+    margin-left: -44.84vw;
+    margin-top: -0.1vw;
+  }
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 2.222vw;
+  width: 100%;
+}
+
+.pagination-dot {
+  width: 0.556vw;
+  height: 0.556vw;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.pagination-dot.active {
+  background-color: #fff;
+  width: 0.7vw;
+  height: 0.7vw;
+  margin-top: -0.1vw;
+}
+
+.pagination-dot.inactive {
+  background-color: #888;
+}
+
+
+.custom-prev-arrow {
+  background: url('../../../assets/left.png') no-repeat center;
+  background-size: contain;
+  width: 2.6vw;
+  height: 2.6vw;
+  position: absolute;
+  left: 2.2vw;
+  top: 49.5%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1; /* Ensure arrows are clickable */
+}
+
+.custom-next-arrow {
+  background: url('../../../assets/right.png') no-repeat center;
+  background-size: contain;
+  width: 2.6vw;
+  height: 2.6vw;
+  position: absolute;
+  right: 2.2vw;
+  top: 49.5%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1; /* Ensure arrows are clickable */
+}
+
+@media screen and (max-width: 900px) {
+  .pagination-dot{
+    width: 8px;
+    height: 8px;
+  }     
+  .pagination-dot.active {
+    width: 10px; 
+    height: 10px;
+  }
+  .custom-prev-arrow, .custom-next-arrow {
+    width: 4vw;
+    height: 4vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .textt {
+    font-size: 7vw;
+  }
+  .first-imagee {
+    width: 40vw;
+    height: 46vw; /* Or 70.3vh for height responsiveness */
+    left: 25vw;
+    top: -10vw;
+  }
+  .second-imagee{
+    width: 40vw;
+    height: 46vw; 
+    position: absolute;
+    left: 29vw;
+    top: -31.5vw;
+  } 
+  .circlee, .arroww  {
+    display: none;
+  }
+  .pagination-container {
+    bottom: 1vw;
+  } 
+  .pagination-dot {
+    width: 7px;
+    height: 7px;
+    margin: 0 3px;
+  } 
+  .pagination-dot.active {
+    width: 8px;
+    height: 8px;
+    margin: 0 4px;
+    margin-top: -0.5px;
+  } 
+  .custom-prev-arrow, .custom-next-arrow {
+    width: 5.5vw;
+    height: 5.5vw;
+  }
+  .custom-next-arrow {
+    right: 1vw;
+  }
+  .custom-prev-arrow{
+    left: 1vw;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .textt {
+    display: none;
+  }
+  .first-imagee {
+    width: 40vw;
+    height: 46vw; /* Or 70.3vh for height responsiveness */
+    left: 25vw;
+    top: -10vw;
+  }
+  .second-imagee {
+    width: 40vw;
+    height: 46vw; 
+    position: absolute;
+    left: 29vw;
+    top: -31.5vw;
+  }
+}

@@ -1,0 +1,587 @@
+.TheMainOne{
+
+  .theHeader1{
+    text-align: center;
+    font-size: 5.2vw;
+    margin-bottom: 3vw;
+  }
+}
+.what-people-say {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.538vw;
+    background: url('../../../assets/WhatPeopleSay/pexels-cottonbro-3778145.png') no-repeat center center;
+    background-size: cover;
+    height: 46.154vw;
+  }
+  
+  .what-people-say::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../../../assets/WhatPeopleSay/Rectangle\ 23.png') no-repeat center center;
+    background-size: cover;
+    z-index: 2;
+  }
+  
+  .theText-overlay {
+    position: absolute; /* Allows positioning relative to the nearest positioned ancestor */
+    top: 51%; /* Center vertically from the top */
+    left: 25.3%; /* Center horizontally from the left */
+    transform: translate(-50%, -50%); /* Center the text using transform */
+    z-index: 1; /* Ensure it's on top of other content */
+    color: rgb(255, 255, 255); /* Text color */
+    font-size: 10.8vw; /* Font size */
+    padding: 0.769vw; /* Padding around the text */
+    max-width: 23.077vw; /* Maximum width of the text container */
+    text-align: center; /* Center align text */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally within flex container */
+    align-items: center; /* Center vertically within flex container */
+}
+
+.lastWord {
+  margin-left: 3.167vw;
+  display: inline-block;
+}
+
+.Carousel-Arrows {
+  position: absolute; /* Position the arrows absolutely within .carousel-box */
+  top: 3.83vw;
+  left: 87.5%; /* Position on the left side */
+  // right: 0.769vw; /* Position on the right side */
+  gap: 1.7vw;
+  transform: translateY(-50%); /* Center vertically */
+  display: flex;
+  justify-content: space-between; /* Space out the arrows */
+  z-index: 200; /* Ensure arrows are above other content */
+}
+
+.Arrow {
+  width: 2.35vw; /* Adjust size as needed */
+  height: auto;
+}
+  
+  .carousel-boxx {
+    width: 35.5vw;
+    height: 37.5vw;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    margin: 2.308vw 3.846vw;
+    padding: 1.538vw;
+    left: -0.8%;
+    top: 2.1%;
+  }
+  
+  .slide-content {
+    position: relative;
+    padding: 1.8vw 1.5vw;
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    width: 53.846vw;
+    box-sizing: border-box;
+  }
+
+  .rating-container {
+    display: flex;
+    align-items: center; /* Aligns items vertically centered */
+    padding-top: 1vw;
+  }
+  
+  .rating-stars {
+    display: flex;
+    margin-right: 0.556vw; /* Space between stars and the rating score */
+  }
+  
+  .star {
+    width: 0.6vw; /* Adjust size as needed */
+    height: 0.6vw;
+    border-radius: 50%; /* Makes the circle */
+    background-color: #ccc; /* Gray color for empty star */
+    margin-right: 0.154vw; /* Space between stars */
+  }
+  
+  .star.filled {
+    background-color: #000000; /* Gold color for filled star */
+  }
+  
+  .rating-score {
+    font-size: 0.769vw; /* Adjust font size as needed */
+    margin-right: 0.769vw;
+  }
+  
+  .slide-top {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+  }
+  
+  .theDotss {
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    margin-top: -2vw;
+    right: 1vw;
+  }
+  
+  .theDott {
+    display: inline-block;
+    width: 0.556vw;
+    height: 0.556vw;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 0.278vw;
+    margin-top: 1.8vw;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for active state */
+    margin-bottom: 1.667vw;
+  }
+  
+  .theDott.active {
+    background-color: #333; /* Active color */
+  }
+
+  .slide-header {
+    margin-top: -2.1vw;
+    text-align: left;
+    font-size: 2.34vw;
+    font-weight: normal;
+    color: rgb(117, 117, 117);
+  }
+  
+  .slide-text {
+    margin-top: -0.55vw;
+    text-align: left;
+    font-size: 0.79vw;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2.65;
+    color: rgb(27, 27, 27);
+    margin-bottom: 4.615vw;
+  }
+  
+  .slide-bottom {
+    position: relative; /* Establishes a positioning context for foto2 */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: rgb(234, 232, 232);
+    padding: 0vw 1.9vw;
+    height: 10.8vw;
+    width: 26.1vw;
+    top: 1.944vw;
+  }
+  
+  .left-content {
+    flex: 70%;
+    padding-right: 0.769vw;
+  }
+  
+  .left-content p:first-child {
+    font-size: 1.3vw;
+    font-family: 'Brown Sugar', cursive;
+    padding-top: 0.5vw;
+  }
+  
+  .left-content p {
+    font-size: 0.769vw;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .background-imagee {
+    position: relative; /* Use relative positioning */
+    margin-top: -11.2vw; /* Adjust the margin as needed */
+    margin-left: 2.45vw;
+    z-index: -1;
+  }  
+
+  .background-imageeE{
+    content: url('../../../assets/WhatPeopleSay/Group 34.png');
+    width: 29.8vw;
+    object-fit: cover;
+  }
+  .right-content {
+    flex: 1;
+    text-align: right;
+    margin-top: -0.8vw;
+    margin-right: -0.97vw;
+  }
+  
+  .fotoo1{
+    content: url('../../../assets/WhatPeopleSay/ivan-dodig-R21SyyJDFgc-unsplash.png');
+    width: 8vw;
+    height: auto;
+  }
+
+  body.dark-mode {
+    .slide-bottom {
+      color: #000000;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .what-people-say {
+      height: 54vw;
+    }
+    .theText-overlay {
+      display: none;
+    }
+    
+    .what-people-say {
+      display: flex; /* Enable flexbox */
+      justify-content: center; /* Center content horizontally */
+      align-items: center; /* Center content vertically, if needed */
+    }
+  
+    .carousel-boxx {
+      width: 70vw;
+      height: 46vw;
+      padding: 1.538vw;
+      margin-left: 7vw;
+    }
+
+    .slide-header {
+      margin-left: -5vw;
+      font-size: 3.34vw;
+    }
+
+    .slide-text {
+      font-size: 1vw;
+      margin-left: -5vw;
+    }
+    .slide-bottom {
+      margin-left: -5vw;
+      height: 16vw;
+      width: 50vw;
+    }
+
+    .fotoo1 {
+      width: 12.5vw;
+      height: auto;
+    }
+    .background-imagee {
+      margin-top: -18vw; /* Adjust the margin as needed */
+    }  
+  
+    .background-imageeE{
+      width: 50vw;
+    }
+    .left-content p:first-child {
+      font-size: 1.9vw;
+      padding-top: 0.5vw;
+    }
+    
+    .left-content p {
+      font-size: 1.2vw;
+    }
+    .star {
+      width: 0.9vw; /* Adjust size as needed */
+      height: 0.9vw;
+    }
+    .rating-score {
+      font-size: 1.2vw; /* Adjust font size as needed */
+      margin-right: 0.769vw;
+    }
+    .Carousel-Arrows {
+      left: 80%; /* Position on the left side */
+    }
+    
+    .Arrow {
+      width: 2.8vw; /* Adjust size as needed */
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .what-people-say {
+      height: 61vw;
+    }
+    .carousel-boxx {
+      width: 100vw;
+      height: 54vw;
+      margin-left: 4vw;
+      margin-right: 2vw;
+      margin-bottom: 4vw;
+    }
+
+    .slide-header {
+      margin-left: -10vw;
+      font-size: 3.8vw;
+    }
+
+    .slide-text {
+      font-size: 1.3vw;
+      margin-left: -10vw;
+      margin-right: -8vw;
+    }
+    .slide-bottom {
+      margin-left: -10vw;
+      height: 18vw;
+      width: 63vw;
+    }
+
+    .fotoo1{
+      width: 13.7vw;
+      height: auto;
+    }
+    .background-imagee {
+      margin-top: -21vw; /* Adjust the margin as needed */
+    }  
+  
+    .background-imageeE{
+      width: 63vw;
+      height: 20vw;
+    }
+    .left-content p:first-child {
+      font-size: 2.3vw;
+      padding-top: 0.5vw;
+    }
+    
+    .left-content p {
+      font-size: 1.6vw;
+    }
+    .star {
+      width: 1vw; /* Adjust size as needed */
+      height: 1vw;
+      margin-right: 0.4vw; /* Space between stars */
+    }
+    .rating-score {
+      font-size: 1.6vw; /* Adjust font size as needed */
+    }
+    .Carousel-Arrows {
+      left: 87.5%; /* Position on the left side */
+      top: 2.5vw;
+    }    
+    .Arrow {
+      width: 3.2vw; /* Adjust size as needed */
+    }
+    .theDott {
+      width: 0.8vw;
+      height: 0.8vw;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .what-people-say {
+      height: 65vw;
+    }
+    .carousel-boxx {
+      width: 100vw;
+      height: 55vw;
+      margin-left: 4vw;
+      margin-right: 2vw;
+      margin-bottom: 4vw;
+    }
+
+    .slide-header {
+      margin-left: -10vw;
+      font-size: 4.7vw;
+    }
+
+    .slide-text {
+      font-size: 1.6vw;
+      margin-top: -4vw;
+      margin-left: -10vw;
+      margin-right: -8vw;
+    }
+    .slide-bottom {
+      margin-left: -10vw;
+      height: 19vw;
+      width: 63vw;
+      margin-top: -2vw;
+    }
+
+    .fotoo1 {
+      width: 13.9vw;
+      height: auto;
+    }
+    .background-imagee {
+      margin-top: -21vw; /* Adjust the margin as needed */
+    }  
+  
+    .background-imageeE{
+      width: 63vw;
+      height: 20vw;
+    }
+    .left-content p:first-child {
+      font-size: 2.7vw;
+      padding-top: 0.5vw;
+    }
+    
+    .left-content p {
+      font-size: 1.9vw;
+    }
+    .star {
+      width: 1.2vw; /* Adjust size as needed */
+      height: 1.2vw;
+      margin-right: 0.6vw; /* Space between stars */
+    }
+    .rating-score {
+      font-size: 1.9vw; /* Adjust font size as needed */
+    }
+    .Carousel-Arrows {
+      left: 86.5%; /* Position on the left side */
+      top: 2.5vw;
+    }    
+    .Arrow {
+      width: 3.7vw; /* Adjust size as needed */
+    }
+    .theDott {
+      width: 1vw;
+      height: 1vw;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .TheMainOne{
+      .theHeader1{
+        text-align: center;
+        font-size: 8vw;
+        margin-bottom: 3vw;
+      }
+    }
+    .what-people-say {
+      height: 130vw;
+    }
+    .carousel-boxx {
+      width: 110vw;
+      height: 110vw;
+      margin-left: 4vw;
+      margin-right: 2vw;
+      margin-bottom: 4vw;
+    }
+
+    .slide-header {
+      margin-left: -12vw;
+      font-size: 6.2vw;
+    }
+
+    .slide-text {
+      font-size: 2.9vw;
+      margin-top: -4vw;
+      margin-left: -12vw;
+      margin-right: -16vw;
+    }
+    .slide-bottom {
+      margin-left: -12vw;
+      height: 27vw;
+      width: 65vw;
+      margin-top: -2vw;
+    }
+
+    .fotoo1 {
+      width: 20vw;
+      height: auto;
+    }
+    .background-imagee {
+      margin-top: -29vw; /* Adjust the margin as needed */
+    }  
+  
+    .background-imageeE{
+      width: 65vw;
+      height: 26vw;
+    }
+    .left-content p:first-child {
+      font-size: 3.5vw;
+      padding-top: 0.5vw;
+    }
+    
+    .left-content p {
+      font-size: 2.9vw;
+    }
+    .star {
+      width: 1.5vw; /* Adjust size as needed */
+      height: 1.5vw;
+      margin-right: 0.6vw; /* Space between stars */
+    }
+    .rating-score {
+      font-size: 2.9vw; /* Adjust font size as needed */
+    }
+    .Carousel-Arrows {
+      left: 85%; /* Position on the left side */
+      top: 9vw;
+    }    
+    .Arrow {
+      width: 4.5vw; /* Adjust size as needed */
+    }
+    .theDott {
+      width: 1.5vw;
+      height: 1.5vw;
+      margin: 1.3vw 0.4vw;
+    }
+  }
+
+  @media (max-width: 350px) {
+    .what-people-say {
+      height: 135vw;
+    }
+    .carousel-boxx {
+      width: 100vw;
+      height: 120vw;
+    }
+
+    .slide-header {
+      font-size: 6.2vw;
+    }
+
+    .slide-text {
+      font-size: 3.1vw;
+      margin-top: -4vw;
+      margin-left: -10vw;
+      margin-right: -8vw;
+    }
+    .slide-bottom {
+      margin-left: -10vw;
+      height: 28vw;
+      width: 63vw;
+      margin-top: -2vw;
+    }
+
+    .fotoo1{
+      width: 21.8vw;
+      height: auto;
+    }
+    .background-imagee {
+      margin-top: -30vw; /* Adjust the margin as needed */
+    }  
+  
+    .background-imageeE{
+      width: 63vw;
+      height: 28vw;
+    }
+    .left-content p:first-child {
+      font-size: 4.2vw;
+      padding-top: 0.5vw;
+    }
+    
+    .left-content p {
+      font-size: 3.1vw;
+    }
+    .star {
+      width: 1.7vw; /* Adjust size as needed */
+      height: 1.7vw;
+      margin-right: 0.8vw; /* Space between stars */
+    }
+    .rating-score {
+      font-size: 3.1vw; /* Adjust font size as needed */
+    }
+    .Carousel-Arrows {
+      left: 83.5%; /* Position on the left side */
+      top: 7.5vw;
+    }    
+    .Arrow {
+      width: 5.3vw; /* Adjust size as needed */
+    }
+    .theDott {
+      margin: 1.7vw 0.6vw;
+      width: 1.6vw;
+      height: 1.6vw;
+    }
+  }

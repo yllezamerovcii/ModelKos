@@ -1,0 +1,441 @@
+/* General Styles */
+.models-container {
+  margin: 0 auto;
+  position: relative; /* Ensure arrows are positioned correctly */
+  margin-bottom: 3.889vw;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 5.2vw;
+  margin-bottom: 1.111vw;
+  font-weight: normal;
+  margin-left: 1.3vw;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  justify-content: flex-start;
+  margin-bottom: 2vw;
+  margin-left: 0.3vw;
+}
+
+.tab {
+  padding: 0.556vw 0.667vw;
+  padding-right: 2.4vw;
+  border: none;
+  margin: 0 0.278vw;
+  cursor: pointer;
+  background-color: white;
+  position: relative;
+  font-size: 0.8vw;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+}
+
+.tab:last-child {
+  margin-left: auto;      /* Pushes the last tab to the right */
+  margin-right: -0.5vw;
+}
+
+.tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: -0.111vw; /* Adjust this value to control distance from the tab */
+  left: 0;
+  width: 60%;
+  height: 0.111vw; /* Line thickness */
+  background-color: black; /* Line color */
+}
+
+.models-container{
+  width: 90%;
+}
+
+.cardd{
+  border: 1px solid rgb(195, 194, 194);
+  position: relative;
+}
+.cardd:hover {
+  border: none;
+  background-color: #181818 !important; 
+  color: white !important; 
+
+  .card-info, .cardPrice, .card-info-bottom, .cardTitle{
+    color: white;
+  }
+}
+
+.card-image-wrapper {
+  position: relative; 
+}
+
+.card-image {
+  width: 100%;
+  height: 21.5vw;
+}
+
+.card-button {
+  position: absolute;
+  top: 17.8vw; /* Distance from the top */
+  left: 1vw; /* Distance from the left */
+  padding: 0.556vw 1.111vw;
+  background-color: #181818; 
+  color: white;
+  border: none;
+  border-radius: 0.2vw;
+  cursor: pointer;
+  display: none; /* Hide button by default */
+  transition: opacity 0.3s ease;
+  font-size: 0.8vw;
+  height: 2.5vw;
+  width: 8.5vw;
+}
+
+.cardd:hover .card-button {
+  display: block; /* Show button on hover */
+}
+
+/* Card title and info styles */
+.cardTitle {
+  padding-top: 0.4vw;
+  padding-left: 1vw;
+  color: rgb(84, 82, 82);
+  font-size: 0.75vw;
+  margin-bottom: -0.278vw;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.8vw;
+  padding-left: 1vw;
+  padding-right: 0.6vw;
+  font-size: 1.15vw;
+}
+
+.card-info-item {
+  display: flex;
+  justify-content: space-between; /* Pushes name and price to opposite sides */
+  align-items: center;
+  margin-bottom: 1vw;
+  padding-right: 0.556vw;
+}
+
+.cardPrice {
+  font-size: 0.778vw;
+  margin-left: auto; /* Push the .cardPrice to the right */
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.card-info-bottom {
+  display: flex;
+  justify-content: space-between; /* Space between location and number */
+  margin-top: 0.5vw;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.78vw;
+  margin-bottom: 1.3vw;
+}
+
+.card-info-item-location,
+.card-info-item-number {
+  display: flex;
+  align-items: center;
+  margin: 0; /* Reset margin for the combined row */
+  padding-bottom: 0.556vw;
+  padding-right: 0.556vw;
+}
+
+.card-info-item-location {
+  margin-right: auto; /* Push the location to the left */
+}
+
+.card-info-item-number {
+  margin-left: auto; /* Push the number to the right */
+}
+
+.info-icon {
+  content: url('../../../assets/Models/2216335_location_map_map pin_marker_pin_icon.png');
+  margin-right: 0.278vw; /* Space between icon and text */
+}
+
+.arroww {
+  position: absolute;
+  top: 57.2%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  color: black; /* Adjust arrow color */
+  border: none;
+  cursor: pointer;
+  font-size: 2vw;
+}
+.arrow-leftt {
+  left: -2.8vw; /* Adjust the distance from the left edge */
+}
+
+.arrow-rightt {
+  right: -2.8vw; /* Adjust the distance from the right edge */
+}
+
+/* Dots */
+.dots {
+  text-align: center;
+  // margin-top: 30vw; /* Ensure there's enough space between carousel and dots */
+}
+
+.dot {
+  display: inline-block;
+  width: 0.556vw;
+  height: 0.556vw;
+  background-color: #bbb;
+  border-radius: 50%;
+  margin: 0 0.278vw;
+  margin-top: 1.8vw;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition for active state */
+  margin-bottom: 1.667vw;
+}
+.dot.active {
+  background-color: #000000;
+}
+
+@media screen and (max-width: 1440px) { 
+  h1 {
+    margin-left: 2.3vw;
+  }
+  .tabs {
+    margin-left: 1.9vw;
+  }
+  .tab {
+    font-size: 1.2vw;
+  }
+  .tab:last-child {
+    margin-left: auto;    
+    margin-right: 0.5vw;
+  }
+  .card-image {
+    width: 100%;
+    height: 27vw;
+  }
+  .cardTitle {
+    font-size: 1.1vw;
+  }
+  
+  .card-info {
+    font-size: 1.3vw;
+  }
+  
+  .cardPrice {
+    font-size: 1.1vw;
+  }
+  
+  .card-info-bottom {
+    font-size: 1.1vw;
+  }
+  .card-button {
+    position: absolute;
+    top: 23vw; /* Distance from the top */
+  }
+}
+
+@media screen and (max-width: 1025px) { 
+  .tab {
+    font-size: 1.3vw;
+  }
+  .card-image {
+    width: 40vw;
+    height: 30vw;
+    object-fit: cover;
+  }
+  .cardTitle {
+    font-size: 1.5vw;
+  }
+  
+  .card-info {
+    font-size: 1.7vw;
+  }
+  
+  .cardPrice {
+    font-size: 1.5vw;
+  }
+  
+  .card-info-bottom {
+    font-size: 1.5vw;
+  }
+  .card-button {
+    position: absolute;
+    top: 25vw; /* Distance from the top */
+    font-size: 1.1vw;
+    height: 3.2vw;
+    width: 11vw;
+  }
+}
+
+@media screen and (max-width: 769px) { //876
+  h1 {
+    margin-left: 8vw;
+  }
+  .tabs {
+    margin-left: 7vw;
+  }
+  .tab:last-child {
+    margin-left: 50vw;
+  }
+  .tab {
+    font-size: 2.2vw;
+  }
+  .card-image {
+    width: 75vw;
+    height: 60vw;
+    object-fit: cover;
+  }
+  .cardTitle {
+    font-size: 2.2vw;
+  }
+  
+  .card-info {
+    font-size: 2.7vw;
+  }
+  
+  .cardPrice {
+    font-size: 2.2vw;
+  }
+  
+  .card-info-bottom {
+    font-size: 2.2vw;
+  }
+  .card-button {
+    position: absolute;
+    top: 53vw; /* Distance from the top */
+    font-size: 1.7vw;
+    height: 5vw;
+    width: 16vw;
+  }
+  .arroww {
+    font-size: 4vw;
+  }
+  .dots {
+    margin-top: 3vw; 
+  }
+  .dot {
+    width: 1.4vw;
+    height: 1.4vw;
+    margin: 0 0.9vw;
+  }
+}
+
+@media screen and (max-width: 600px) { //876
+  h1 {
+    margin-left: 8vw;
+    font-size: 7vw;
+  }
+  .tabs {
+    margin-left: 7vw;
+  }
+  .tab:last-child {
+    margin-left: 32vw;
+  }
+  .tab {
+    font-size: 2.6vw;
+  }
+  .cardTitle {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 450px) { //876
+  h1 {
+    margin-left: 8vw;
+    font-size: 8vw;
+  }
+  .tabs {
+    margin-left: 7vw;
+  }
+  .tab:last-child {
+    margin-left: 22vw;
+  }
+  .tab {
+    font-size: 2.7vw;
+  }
+  .cardTitle {
+    font-size: 3vw;
+  }
+  
+  .card-info {
+    font-size: 3.5vw;
+  }
+  
+  .cardPrice {
+    font-size: 3.7vw;
+  }
+  
+  .card-info-bottom {
+    font-size: 3vw;
+  }
+  .card-button {
+    position: absolute;
+    top: 50vw; /* Distance from the top */
+    font-size: 3vw;
+    height: 8vw;
+    width: 25vw;
+  }
+  .arroww {
+    font-size: 5vw;
+  }
+  .dot {
+    width: 1.5vw;
+    height: 1.5vw;
+    margin: 0 0.7vw;
+  }
+}
+
+
+@media screen and (max-width: 300px) { //876
+  h1 {
+    margin-left: 8vw;
+    font-size: 7vw;
+  }
+  .tabs {
+    margin-left: 7vw;
+  }
+  .tab:last-child {
+    margin-left: 13vw;
+  }
+  .tab {
+    font-size: 3.2vw;
+  }
+  .cardTitle {
+    font-size: 3.8vw;
+  }
+  
+  .card-info {
+    font-size: 4.5vw;
+  }
+  
+  .cardPrice {
+    font-size: 4.5vw;
+  }
+  
+  .card-info-bottom {
+    font-size: 3.8vw;
+  }
+  .card-button {
+    position: absolute;
+    top: 50vw; /* Distance from the top */
+    font-size: 3vw;
+    height: 8vw;
+    width: 25vw;
+  }
+  .arroww {
+    font-size: 6.8vw;
+  }
+  .dot {
+    width: 2vw;
+    height: 2vw;
+  }
+}
+

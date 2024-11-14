@@ -1,0 +1,74 @@
+/* Base styles for the mode switcher container */
+.mode-switcher-container {
+  background: rgb(61, 60, 60);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  padding: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* The switcher element (sun and moon icons) */
+.mode-switch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60px;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 15px;
+  padding: 5px;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+/* Icon container, both icons are always visible */
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+}
+
+/* Positioning for the sun icon (left side) */
+.icon1 {
+  left: 5px;
+  color: #000000; /* Yellow color for the sun */
+}
+
+.icon2 {
+  right: 5px;
+  color: #000000; 
+}
+
+.dark-mode .icon2 {
+  color: black;
+  background-color: white;
+  border-radius: 15px;
+  padding: 3px;
+}
+
+.light-mode .icon1 {
+  color: rgb(0, 0, 0);
+  background-color: white;
+  border-radius: 15px;
+  padding: 3px;
+}
+
+body {
+  transition: background-color 0.3s, color 0.3s; // Smooth transition
+}
+
+@media (max-width: 500px) {
+  .mode-switcher-container {
+    margin-top: 1.5vw;
+  }
+}

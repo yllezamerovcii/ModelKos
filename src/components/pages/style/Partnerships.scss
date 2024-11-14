@@ -1,0 +1,199 @@
+.partnerships-container {
+    padding: 2.308vw;
+  }
+  
+  .partnerships-header {
+    text-align: center;
+    font-size: 5.2vw;
+    font-weight: normal;
+    margin-bottom: 3.077vw;
+    margin-top: 4.615vw;
+  }
+  
+  .partnerships-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  }
+  
+  .partnerships-left {
+    flex: 1;
+    padding-right: 7.692vw;
+    padding-left: 7.154vw;
+  }
+  
+  .partnerships-logo {
+    content: url('../../../assets/Partnerships/Group 13105.png');
+    width: 15.7vw;
+    padding-top: 2.462vw;
+  }
+  
+  .partnerships-subheader {
+    font-size: 4.3vw;
+    font-weight: normal;
+    margin-top: 18px;
+    line-height: 1.5;
+  }
+  
+  .partnerships-paragraph {
+    margin-top: -2.222vw;
+    margin-bottom: 1.385vw;
+    line-height: 2.7;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.78vw;
+    padding-right: 10vw;
+  }
+  
+  .partnerships-button {
+    margin-top: 0.769vw;
+    padding: 0.769vw 1.538vw;
+    background-color: rgb(28, 28, 28);
+    color: white;
+    border: none;
+    border-radius: 0.385vw;
+    cursor: pointer;
+    width: 9vw;
+    font-size: 0.8vw;
+  }
+  
+  .partnerships-right {
+    flex: 1;
+    margin-top: 3.462vw;
+    margin-left: -8.462vw;
+  }
+  
+  .partnerships-image {
+    content: url('../../../assets/Partnerships/284904855_668356461070389_6809424271305971756_n\ \(1\).png');
+    max-width: 37.308vw;
+    height: auto;
+  }
+  
+  @media screen and (max-width: 1200px){
+    .partnerships-paragraph {
+      font-size: 1.1vw;
+      padding-right: 2vw;
+    }
+    .partnerships-button {
+      width: 13vw;
+      height: 3.8vw;
+      font-size: 1.1vw;
+    }
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .partnerships-content {
+      flex-direction: column;
+      align-items: center; /* Center both left and right sections */
+      text-align: center;
+    }
+  
+    .partnerships-left {
+      display: flex; /* Use flexbox */
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items horizontally */
+      padding: 0 2.222vw;
+    }
+  
+    .partnerships-right {
+      display: flex; /* Use flexbox for centering */
+      justify-content: center; /* Center the content horizontally */
+      margin-top: 3.333vw; /* Ensure there's spacing above */
+      margin-left: 0vw;
+    }
+  
+    .partnerships-logo {
+      width: 20vw;
+      margin-bottom: 2.222vw;
+    }
+  
+    .partnerships-header {
+      font-size: 6.5vw;
+    }
+  
+    .partnerships-subheader {
+      margin-bottom: 4.444vw;
+      font-size: 5.5vw;
+    }
+  
+    .partnerships-paragraph {
+      font-size: 1.5vw;
+      padding-right: 0vw;
+    }
+  
+    .partnerships-button {
+      margin-top: 0.769vw;
+      width: 16vw;
+      height: 5vw;
+      font-size: 1.5vw;
+    }
+  
+    .partnerships-image {
+      max-width: 65%;
+      height: auto;
+    }
+  }
+  
+  
+  @media screen and (max-width: 500px) {
+    .partnerships-left {
+      padding: 0 2.222vw;
+    }
+  
+    .partnerships-logo {
+      width: 27vw;
+    }
+
+    .partnerships-header{
+      font-size: 7.5vw;
+    }
+    .partnerships-subheader {
+      font-size: 6.5vw;
+    }
+    .partnerships-paragraph {
+      font-size: 2vw;
+    }
+    .partnerships-button {
+      margin-top: 0.769vw;
+      width: 18vw;
+      height: 6vw;
+      font-size: 2vw;
+    }
+    .partnerships-image {
+      max-width: 65%;
+      height: auto;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .partnerships-header{
+      font-size: 8vw;
+    }
+    .partnerships-paragraph {
+      font-size: 2.9vw;
+    }
+    .partnerships-button {
+      margin-top: 0.769vw;
+      width: 25vw;
+      height: 8vw;
+      font-size: 2.9vw;
+    }
+  }
+
+  @media screen and (max-width: 350px) {
+    .partnerships-header{
+      font-size: 10vw;
+    }
+    .partnerships-logo {
+      width: 30vw;
+    }
+    .partnerships-paragraph {
+      font-size: 3.1vw;
+    }
+    .partnerships-button {
+      margin-top: 0.769vw;
+      width: 27vw;
+      height: 8vw;
+      font-size: 3.1vw;
+    }
+  }

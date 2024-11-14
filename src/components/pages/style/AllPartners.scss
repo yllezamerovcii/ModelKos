@@ -1,0 +1,108 @@
+.all-partners-container {
+  text-align: center;
+  padding: 2rem;
+  overflow-x: auto; /* Allow horizontal scrolling */
+}
+
+.all-partners-title {
+  font-size: 1em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  margin-bottom: 2.6vw;
+  margin-left: -0.5vw;
+}
+
+.all-partners-marquee {
+  width: 100%;
+  overflow: hidden;
+}
+
+.all-partners-images {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  animation: scroll 5s linear infinite; /* Change to a shorter duration */
+  gap: 5vw;
+}
+
+.all-partners-image {
+  width: 250px; /* Default width for larger screens */
+}
+
+/* Infinite scroll animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.all-partners-button {
+  margin-top: 20px;
+  padding: 0.556vw 1.111vw;
+  font-size: 0.889vw;
+  cursor: pointer;
+  background-color: rgb(28, 28, 28);
+  color: white;
+  border-radius: 10px;
+  height: 3vw;
+  width: 10vw;
+  border: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.all-partners-button:hover {
+  background-color: rgb(79, 78, 78);
+  color: white;
+  border: 2px solid black;
+}
+
+@media (max-width: 1289px) {
+  .all-partners-button {
+    font-size: 1vw;
+    height: 3vw;
+    width: 12vw;
+  }
+}
+
+@media (max-width: 1080px) {
+  .all-partners-button {
+    font-size: 1.4vw;
+    height: 4.5vw;
+    width: 16vw;
+  }
+}
+@media (max-width: 850px) {
+  .all-partners-image {
+    width: 150px; /* Adjust width for tablets */
+  }
+}
+@media (max-width: 663px) {
+  .all-partners-image {
+    width: 95px; /* Adjust width for mobile devices */
+  }
+  .all-partners-button {
+    font-size: 1.7vw;
+    height: 5vw;
+    width: 18vw;
+  }
+}
+@media (max-width: 500px) {
+  .all-partners-image {
+    width: 80px; /* Adjust width for mobile devices */
+  }
+  .all-partners-button {
+    font-size: 0.75em;
+    height: 35px;
+    width: 125px;
+  }
+}
+@media (max-width: 350px) {
+  .all-partners-button {
+    font-size: 0.625em;
+    height: 32px;
+    width: 100px;
+  }
+}

@@ -1,0 +1,80 @@
+.BlogNavbar {
+    display: flex;
+    margin-left: 4.6vw;
+    padding: 0.52vw 0; /* Convert 10px to vw */
+    margin-bottom: 2%;
+  
+    .tab-list {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      gap: 3.7vw; 
+      font-weight: 500;
+    }
+  
+    .tab-item {
+      text-decoration: none;
+      color: rgb(31, 31, 31);
+      font-size: 15px; 
+      font-family: 'Montserrat', sans-serif;
+      padding-bottom: 0.7vw;
+      position: relative;
+      cursor: pointer;
+      border: none;
+      outline: none; 
+    }
+  
+    .tab-item::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 0.15vw; 
+      background-color: black;
+      border-radius: 0.56vw;
+      transition: width 0.3s ease; 
+    }
+
+    .tab-item:hover::after {
+      width: 100%;
+    }
+
+    .tab-item.active::after,
+    .tab-item:focus::after,
+    .tab-item:active::after {
+      width: 100%; /* Expand underline on active */
+    }
+  
+    @media screen and (max-width: 900px) {
+      .tab-item {
+        color: rgb(31, 31, 31);
+        font-size: 0.75em;
+      }
+  
+      .tab-item::after {
+        height: 2px; /* Adjust underline thickness for smaller screens */
+      }
+    }
+    @media screen and (max-width: 820px) {
+      margin-left: 5vw;
+    }
+    @media screen and (max-width: 592px) {
+      margin-left: 0vw;
+      justify-content: center;
+    }
+    @media screen and (max-width: 420px) {
+        .tab-item {
+          color: rgb(31, 31, 31);
+          font-size: 0.65em;
+        }
+    }
+    @media screen and (max-width: 370px) {
+        .tab-item {
+          color: rgb(31, 31, 31);
+          font-size: 0.56em;
+        }
+    }
+  }
+  

@@ -1,0 +1,527 @@
+{
+    "FindModelText1": "Punoni me një model",
+    "FindModelText2": "Ose bëhuni një",
+    "FindModelButton1": "Modelet Femra",
+    "FindModelButton2": "Gjej Lokacionin",
+    "FindModelButton3": "Gjej Modelin",
+
+    "AboutUsHeader": "Rreth Nesh",
+    "AboutUsText": "ModelKos është baza e të dhënave më e madhe interaktive për modën, e cila lidh botën me modelet, talentet kreative, revistat dhe markat luksoze dhe tregtare.",
+    "AboutUsRole": "Modele • Fotografi • Artist",
+    "AboutUsDate": "19 MAJ 2022",
+
+    "DayOfModelingTextFirst": "DITA E",
+    "DayOfModelingTextSecond": "MODELINGUT",
+    "DayOfModelingOverlayText1": "DITA E",
+    "DayOfModelingOverlayText2": "MODELINGUT",
+    "DayOfModelingOverlayText3": "MODELKOS",
+
+    "GalleryHeader" : "MODELET TONA",
+    "GalleryFirsP": "Dëshiron të jesh këtu?",
+    "GallerySecondP": "ModelKos është në kërkim të talenteve të reja, prandaj bashkohuni me agjencinë më të madhe të modelingut në Kosovë dhe tregoni aftësitë tuaja. Bëhu model!   ",
+    "NavGalleryTab1": "Gjithsecili",
+    "NavGalleryTab2": "Fëmijët",
+    "NavGalleryTab3": "Femër",
+    "NavGalleryTab4": "Mashkull",
+    "NavGalleryTab5": "I pjekur",
+
+    "BeingClassyFirstText1": "TË JESH KLASIK ËSHTË PËRFITIM",
+    "BeingClassySecondText1": "TË JESH PROFESIONAL ËSHTË E PAÇMUESHME",
+
+    "ModelMarketingHeader": "MARKETINGU I MODELEVE",
+    "ModelMarketingParagraph": "Me një rrjet prej mbi 200,000 anëtarësh aktivë, Model Kos është tregu kryesor për modele, fotografë dhe talente kreative në modë për të kërkuar punë. Shtoni portofolin tuaj online të modelimit në ModelKos në mënyrë që klientët potencialë të mund ta shohin dhe të bëjnë rezervime direkte. Profillet e modelimit janë plotësisht të personalizueshme, duke lejuar që të shtoni feed-in tuaj të Instagramit për klientët potencialë që të shohin. Deri tani, mijëra anëtarë janë skautuar nga profesionistët e industrisë për casting dhe punë. Bashkohuni me komunitetin tonë për të filluar!",
+    "ModelMarketingStatistics": {
+            "stat1": {
+                "number": "500,000+",
+                "label": "Imazhe të portofolit"
+            },
+            "stat2": {
+                "number": "20,000+",
+                "label": "Talente të Paraqitura"
+            },
+            "stat3": {
+                "number": "100M",
+                "label": "Vizita"
+            }
+    },
+        "barItems": {
+            "item1": {
+                "label": "Kërko"
+            },
+            "item2": {
+                "label": "Rezervo"
+            },
+            "item3": {
+                "label": "Orari"
+            },
+            "item4": {
+                "label": "Puno me ne"
+            }
+    },
+    "ModelsTitle" : "MODELET",
+    "tabNames": {
+        "all": "Të gjitha",
+        "prishtina": "Prishtinë",
+        "peja": "Pejë",
+        "ferizaji": "Ferizaj",
+        "mitrovica": "Mitrovicë",
+        "gjakova": "Gjakovë",
+        "gjilani": "Gjilan",
+        "prizreni": "Prizren",
+        "viewAll": "Të gjitha →"
+    },
+    "ViewDetailsButton": "Shiko detajet",
+    "cardTitles": {
+      "card1Title": "Modelja",
+      "card2Title": "Modelja",
+      "card3Title": "Modeli",
+      "card4Title": "Modeli"
+    },
+    "cardPrices": {
+      "card1Price": "$100 / orë",
+      "card2Price": "$150 / orë",
+      "card3Price": "$300 / orë",
+      "card4Price": "$150 / orë"
+    },
+
+
+    "WhatWeOfferHeader" : "ÇFARË OFROJMË",
+    "services": [
+    {
+      "id": 1,
+      "title": "TRAJTIMI",
+      "text": "Ne trajnojmë aktorë për reklama, fushata, dyqane, sallone dhe pika shitjeje.",
+      "button": "Mëso më shumë"
+    },
+    {
+      "id": 2,
+      "title": "KOHA",
+      "text": "Ne nxjerrim më të mirën nga talentet tona përmes trajtimit, diskutimeve private dhe trajnimeve.",
+      "button": "Mëso më shumë"
+    },
+    {
+      "id": 3,
+      "title": "ZGJEDHJA",
+      "text": "ModelKos është pranë jush gjatë procesit të zgjedhjes dhe castingut. Ne planifikojmë procese efikase për ju dhe klientët tuaj.",
+      "button": "Mëso më shumë"
+    },
+    {
+      "id": 4,
+      "title": "RRJETET SOCIALE",
+      "text": "Shërbime të tjera përfshijnë mediat sociale, marketingun e influencuesve, castinget dhe lidhjet me fotografë dhe videografë të njohur.",
+      "button": "Mëso më shumë"
+    },
+    {
+      "id": 5,
+      "title": "PUNË",
+      "text": "Ne ju ofrojmë punësim të drejtpërdrejtë përmes partnerëve tanë ndërkombëtarë të shërbimit të punësimit.",
+      "button": "Mëso më shumë"
+    },
+    {
+      "id": 6,
+      "title": "MENAXHIM",
+      "text": "Ne do të ndihmojmë biznesin tuaj të rritet duke ofruar menaxhim dhe konsulencë të klasit botëror për modelet.",
+      "button": "Mëso më shumë"
+    },
+    {
+      "id": 7,
+      "title": "AMBASADOR I MARKËS",
+      "text": "Me ne, do të bëhesh partner i markës dhe do të fitosh provizion nga shitjet që gjenerohen nga biznesi yt për partnerët tanë.",
+      "button": "Mëso më shumë"
+    },
+    {
+      "id": 8,
+      "title": "BASHKËPUNIM",
+      "text": "Të punosh me ne do të thotë të kesh një familje të madhe, mund të punosh me modele të tjera për të arritur edhe më shumë sukses.",
+      "button": "Mëso më shumë"
+    }    
+  ],
+  "WhatWeOfferButton": "Të Gjitha",
+  "BecomeModelParagraph": "ModelKos është një nga faqet më të ndikshme të lajmeve të modës dhe burimeve krijuese brenda industrisë së modës, me një bazë të gjerë të të dhënave, intervista të veçanta me yjet krijuese të industrisë dhe renditjet e tij të ndikshme të modeleve kryesore.",
+  "WhatPeopleSayHeader": "ÇFARË THONË NJERËZIT",
+  "WhatPeopleSayParagraph": "ÇFARË THONË",
+  "WhatPeopleSaySpan": "NJERËZIT",
+
+  "WhatPeopleSaySlideHeader": "AGJENSIA MË E MIRË",
+  "WhatPeopleSaySlideParagraph": "Sarah Doukas e themeloi agjencinë në shtëpinë e saj në vitin 1987. Me Richard Branson si partnerin e saj të biznesit, Sarah revolucionarizoi industrinë tradicionale të modelingut duke lançuar agjencinë e parë britanike që përfaqësonte, në të gjithë botën, fytyrat e reja që Sarah i kishte zbuluar vetë dhe kjo u bë markë e agjencisë.",
+  "WhatPeopleSayLeftContentP": "Menaxhere e Rrjeteve",
+  "WhatPeopleSayLeftContentSpan": "Vlerësimi",
+
+  "PartnershipsHeader": "PARTNERËT TANË",
+  "PartnershipsSubheader": "MENAXHO RRJETET TUA SOCIALE",
+  "PartnershipsParagraph": "MediaKos ndihmon të gjithë influencerat, modelet dhe artistët në menaxhimin e llogarive të tyre sociale, si dhe në krijimin e përmbajtjes dhe shumë më tepër.",
+  "PartnershipsButton": "Mëso më shumë",
+
+  "KosovaGirlsFashion": "Moda",
+  "KosovaGirlsHairStyling": "Stilimi i Flokëve",
+  "KosovaGirlsPhotography": "Fotografia",
+  "KosovaGirlsActing": "Aktori",
+  "KosovaGirlsSubheader": "EDUKIMI FALAS PËR TË GJITHA",
+  "KosovaGirlsParagraph": "MediaKos, në bashkëpunim me KosovaGirls, ofron mbështetje dhe trajnim falas për gratë në modë, dizajn, stilimin e flokëve, fotografi, xhirim video, modelim, aktorësi dhe fusha të tjera.",
+  "KosovaGirlsButton": "Mëso më shumë",
+
+  "ResultsFound": "{{count}} rezultate të gjetura",
+  "DateLabel": "Data",
+  "PerPageLabel": "Për Faqe",
+  
+  "OurBlogHeader": "Blogu Ynë",
+  "blogPosts": [
+    {
+      "id": 1,
+      "date": "18 Korrik, 2022",
+      "title": "Gjëra që Duhet të Dini për Industrinë e Modelimit në 2022",
+      "content": "Çdo vit, industria e modelimit ndryshon, dhe ashtu bëjnë edhe gjërat që modelet aspiruese duhet të dinë për të qenë të suksesshëm. Prandaj, është thelbësore të edukoni veten rreth industrisë për të mbajtur hapin me kohët dhe për t'u përgatitur për atë që po vjen."
+    },
+    {
+      "id": 2,
+      "date": "20 Qershor, 2022",
+      "title": "8 Këshilla të Thjeshta për të Ndihmuar në Përgatitjen e Sesionit Tuaj të Fotografisë",
+      "content": "Një sesion fotografik është një mundësi emocionuese për modelet për të treguar kreativitetin dhe personalitetin e tyre. Sidoqoftë, mund të jetë gjithashtu një përvojë sfiduese nëse nuk përgatiteni siç duhet."
+    },
+    {
+      "id": 3,
+      "date": "1 Maj, 2022",
+      "title": "Pesë Mënyra për të Përdorur Mediat Sociale për të Filluar Karrierën Tuaj në Modelim",
+      "content": "Nuk është sekret që mediat sociale janë një nga mjetet më të fuqishme në marketing këto ditë. Ka treguar vazhdimisht se njerëzit që i përdorin ato kanë më shumë gjasa të blejnë produktet ose shërbimet tuaja. Tani, ato po përdoren gjithashtu si një platformë karriere."
+    },
+    {
+      "id": 4,
+      "date": "18 Korrik, 2022",
+      "title": "Gjëra që Duhet të Dini për Industrinë e Modelimit në 2022",
+      "content": "Çdo vit, industria e modelimit ndryshon, dhe ashtu bëjnë edhe gjërat që modelet aspiruese duhet të dinë për të qenë të suksesshëm. Prandaj, është thelbësore të edukoni veten rreth industrisë për të mbajtur hapin me kohët dhe për t'u përgatitur për atë që po vjen."
+    },
+    {
+      "id": 5,
+      "date": "20 Qershor, 2022",
+      "title": "8 Këshilla të Thjeshta për të Ndihmuar në Përgatitjen e Sesionit Tuaj të Fotografisë",
+      "content": "Një sesion fotografik është një mundësi emocionuese për modelet për të treguar kreativitetin dhe personalitetin e tyre. Sidoqoftë, mund të jetë gjithashtu një përvojë sfiduese nëse nuk përgatiteni siç duhet."
+    },
+    {
+      "id": 4,
+      "date": "18 Korrik, 2022",
+      "title": "Dhjetë Këshillat Kryesore për Modelet e Reja",
+      "content": "Qoftë nëse sapo po filloni si modele apo jeni një profesioniste me përvojë, duhet gjithmonë të ndiheni komode gjatë modelimit. Para çdo xhirimi, duhet të keni një telefonatë ose një takim ballë për ballë."
+    },
+    {
+      "id": 5,
+      "date": "20 Qershor, 2022",
+      "title": "Si të Përgatiteni për një Audicion të Modelimit",
+      "content": "Çfarë pritet gjatë audicioneve të modelimit dhe thirrjeve të hapura. Ka shumë pak gjëra më emocionuese në botën e modelimit se sa të marrësh një thirrje për audicion. Të gjithë duam që takimet tona të shkojnë mbarë dhe të dukemi sa më bukur."
+    },
+    {
+      "id": 6,
+      "date": "1 Maj, 2022",
+      "title": "Bëhuni Një Model-Influencer",
+      "content": "Ndërsa ka shumë agjenci modelimi nga të cilat mund të zgjidhni, është e vështirë të dini me kë të nënshkruani kontratë, por më e rëndësishmja, nëse ata do të kenë atë që ju nevojitet për të pasur sukses si një model apo influencer."
+    },
+    {
+      "id": 7,
+      "date": "18 Korrik, 2022",
+      "title": "Elementet Thelbësore Verore Casual-Chic në Bardh e Zi",
+      "content": "Vera sapo ka filluar dhe Nju Jorku po bëhet qyteti më i mirë në botë (përveç lagështisë, trenave të nxehtë të metrosë, dhe njerëzve të djersitur...)!"
+    },
+    {
+      "id": 8,
+      "date": "20 Qershor, 2022",
+      "title": "Edicioni Veror",
+      "content": "Jam shumë e emocionuar që mund të ndaj me ju një tjetër edicion të ClemStyleslt për Gwynnie Bee! Këtë verë, po luajmë me bazat dhe po tregojmë..."
+    },
+    {
+      "id": 9,
+      "date": "1 Maj, 2022",
+      "title": "Ekspertja e Modelimit ModelKos",
+      "content": "Themeluesja e ModelKos, Vanessa Helmer, është Ekspertja e Modelimit për TheBalance.com. Vanessa ndan përvojën e saj 35-vjeçare si agjente dhe kërkuese ndërkombëtare e modeleve me modelet e reja që kërkojnë këshilla dhe udhëzime profesionale."
+    }    
+  ],
+  "ReadMoreButton": "Lexo më shumë",
+  "ReadAllButton" : "Lexo të gjitha",
+
+  "JoinAcademyTitle": "AKADEMIA MODELKOS",
+  "JoinAcademyParagraph": "Nëse dëshiron të jesh model, ne jemi këtu për të ofruar këshilla dhe për të krijuar një platformë për modelet e reja në aspiratë. Ne përpiqemi të punojmë me një gamë të larmishme talentesh dhe të mbështesim çdo individ pavarësisht nga sfondi apo aftësitë e tyre. Ne jemi një ekip i përbërë nga gra të suksesshme dhe të larmishme.",
+  "JoinAcademyButton": "Bashkohu me akademinë",
+
+  "AllPartnersTitle": "PARTNERËT TANË",
+  "AllPartnersButton": "Shiko të gjithë partnerët",
+
+  "SubscribeHeader": "ABONOHUNI NË NEWSLETTER-IN TONË",
+  "SubscribeParagraph": "Abonohuni në newsletter-in tonë për të marrë lajmet dhe përditësimet më të fundit në lidhje me ModelKos",
+  "SubscribeButton": "Abonohuni",
+  "TypeMailHere": "Shkruaj email-in këtu",
+
+
+  "navbar": {
+    "home": "Shtëpia",
+    "ourWork": "Puna Jonë",
+    "about": "Rreth Nesh ⯆",
+    "models": "Modelet ⯆",
+    "academy": "Akademia",
+    "blog": "Blogu"
+  },
+  "NavbarButton1": "Apliko Tani",
+  "NavbarButton2": "Kontakto",
+
+  "Sidebar": {
+    "home": "Shtëpia",
+    "ourWork": {
+      "title": "Puna Jonë",
+      "productService": "Uebfaqet e Produkteve dhe Shërbimeve",
+      "eCommerce": "Faqet e e-Tregtisë",
+      "intranets": "Intranetet dhe Portalet Ueb",
+      "uiUxDesign": "Dizajni UI/UX",
+      "mobileAppsDesign": "Dizajni i Aplikacioneve Mobile",
+      "contentStrategy": "Strategjia e Përmbajtjes",
+      "seo": "SEO",
+      "accessibilityServices": "Shërbimet e Qasjes"
+    },
+    "aboutUs": {
+      "title": "Rreth Nesh",
+      "mobileApps": "Aplikacione Mobile",
+      "latestWorks": "Punët e Fundit",
+      "branding": "Markimi",
+      "games": "Lojërat",
+      "design": "Dizajni",
+      "videos": "Videot",
+      "socialMedia": "Mediat Sociale",
+      "entertainment": "Argëtim"
+    },
+    "models": "Modelët",
+    "academy": {
+      "title": "Akademia",
+      "aboutUs": "Rreth Nesh",
+      "ourTeam": "Ekipi Ynë",
+      "clients": "Klientët",
+      "location": "Lokacioni",
+      "awards": "Çmimet",
+      "culture": "Kultura",
+      "achievements": "Arritjet",
+      "ourAcademy": "Akademia Jonë"
+    },
+    "blog": "Blogu",
+    "applyNow": "Apliko Tani",
+    "contacts": "Kontaktet",
+    "support": "FAQ",
+    "sendFeedback": "Komente",
+    "faqs": "Pyetje",
+    "contactUs": "Kontaktoni",
+    "footerText": "@2022 Modelkos"
+  },
+
+  "FooterData": {
+    "topText1": "MODELIM",
+    "topText2": "MODELIM",
+    "leftColumns": [
+      {
+        "header": "Modelet",
+        "paragraphs": ["Rezervo Model", "Modelet Meshkuj", "Modelet Femra", "Modelet Fëmijë", "Anëtarësimi"]
+      },
+      {
+        "header": "Rreth",
+        "paragraphs": ["Kompania", "Ekipi Ynë", "Partnerët", "Karriera", "Lajme & Ngjarje"]
+      },
+      {
+        "header": "Puna",
+        "paragraphs": ["Fotografia", "Dizajni", "Artist Grimi", "Sfilata Mode", "Reklamim"]
+      },
+      {
+        "header": "Mbështetja",
+        "paragraphs": ["Deklarata e Privatësisë", "Kushtet e Shërbimit", "Ndihma", "FAQ", "Kontaktet"]
+      }
+    ],
+    "rightColumns1": [
+      {
+        "header": "MODELET",
+        "items": ["Femra - 0207 376 7764", "Meshkuj - 0207 376 7464", "bookamodel@modelkos.com"]
+      },
+      {
+        "header": "MENAXHIMI I MODELKOS",
+        "items": ["Kati 1", "5 Jubilee Place", "Prishtinë, Kosovë"]
+      },
+      {
+        "header": "PUNË",
+        "items": ["jobs@modelkos.com"]
+      }
+    ],
+    "lastRow": {
+      "logo": "MODELKOS",
+      "logoText": "©2022 - MODELKOS",
+      "paragraphs": ["Deklarata e Privatësisë", "Kushtet e Shërbimit", "FAQ"],
+      "social": ["Facebook", "Instagram", "TikTok", "Twitter"],
+      "number": "+383 (44) 100 200",
+      "languageSelector": "Zgjidhni Gjuhën"
+    }
+  },
+
+  "BenefitsHeader": "PËRFITIMET",
+  "benefits": [
+    {
+      "text": "Partneritete afiliate për marrëveshje direkte dhe programe ambasadorësh me marka të mëdha mode"
+    },
+    {
+      "text": "Punë në sektorë interesantë, si TV & Argëtim, Muzikë, Industria e Filmit, Ndikues Online, Gaming ose Moda"
+    },
+    {
+      "text": "Menaxhim i dedikuar për praninë e suksesshme në rrjetet sociale dhe biznes: Ne menaxhojmë kanalin Youtube, llogaritë në Instagram, TikTok, Facebook dhe Twitter për cilindo nga modelet tona në partneritet me MediaKos"
+    },
+    {
+      "text": "Shans për t'u bashkuar në Shfaqjet TV dhe Evenimentet e ModelKos/Modelët e Kosovës"
+    }
+  ],
+  "BenefitsButton": "Shiko të gjitha",
+
+  "BlogGalleryTab1": "Të gjitha",
+  "BlogGalleryTab2": "Modelimi",
+  "BlogGalleryTab3": "Modë",
+  "BlogGalleryTab4": "Yjet",
+  "BlogGalleryTab5": "Të njohura",
+  "BlogGalleryTab6": "Të modës",
+
+  "ModelDetails": {
+    "Height": "Gjatësia 1.78 m",
+    "Bust": "Gjoksi 86 cm A",
+    "Waist": "Beli 61 cm",
+    "Hips": "Ijet 86 cm",
+    "Dress": "Fustani 2 US",
+    "Shoe": "Këpucët 8 US",
+    "Hair": "Flokët Bionde e Errët",
+    "Eyes": "Sytë Kafe"
+  },
+
+  "blogBannerHeader": "BLOGU YNË",
+  "blogBannerInput": "Kërko blogun këtu",
+
+  "historyHeader": "HISTORIA",
+  "historyParagraph1": "ModelKos u krijua me angazhimin dhe kuptimin se të gjitha talentet mund të përfaqësohen në mënyrë të barabartë dhe se tarifat dhe pagesat për shërbimet duhet të negocionen dhe paguhen për talentin në mënyrë të shpejtë. Me studio të saj dhe staf teknik, ModelKos gjithashtu e kupton nevojat e shpejta të Modelit, Talentit, Klientit, Prodhuesit, Regjisorit dhe të gjithë stafit mbështetës në prodhimin e shtypit, televizionit dhe filmit.",
+  "historyParagraph2": "Departamenti i Media Sociale të ModelKos është vazhdimisht duke punuar për të shtuar përmbajtje, etiketa, përmendje dhe angazhime të tjera për modelet, talentet, klientët dhe të gjithë partnerët tanë.",
+
+  "itsSharpCast": {
+    "line1": "ËSHTË",
+    "line2": "GRUPI I SHKËLQYER I TALENTEVE",
+    "line3": "STAFI",
+    "line4": "DHE",
+    "line5": "STILI I VEÇANTË I MARKËS",
+    "line6": "TË",
+    "line7": "TALENTIT"
+  },
+
+  "columnsData": [
+    {
+      "header": "AGJENSIA",
+      "rows": [
+        "Rreth nesh",
+        "Modelet tona",
+        "Partnerët tanë",
+        "Ekipa jonë",
+        "Partnerët tanë",
+        "Klientët"
+      ]
+    },
+    {
+      "header": "MODELET",
+      "rows": [
+        "Bëhu model",
+        "Karriera",
+        "Revista",
+        "Listat",
+        "Fytyrat e reja",
+        "Vlerësimi"
+      ]
+    }
+  ],
+
+  "modelsColumnsData": [
+    {
+      "header": "QYTETI",
+      "rows": [
+        "Prishtina",
+        "Peja",
+        "Prizreni",
+        "Gjakova",
+        "Gjilani",
+        "Ferizaji",
+        "Mitrovica"
+      ]
+    },
+    {
+      "header": "GRUA",
+      "rows": [
+        "Kryesore",
+        "Direkte",
+        "B Plus"
+      ]
+    },
+    {
+      "header": "MALE",
+      "rows": [
+        "Kryesore",
+        "Direkte",
+        "I Madh & I Lartë"
+      ]
+    },
+    {
+      "header": "FËMIJË",
+      "rows": [
+        "Bebesh",
+        "Të vegjlit",
+        "Parashkollor",
+        "Shkollor",
+        "Adoleshent"
+      ]
+    },
+    {
+      "header": "TË MOSHUAR",
+      "rows": [
+        "Femra të moshuara",
+        "Më të moshuar"
+      ]
+    }
+  ],
+
+  "ApplyHeader1": "BËHUNI NJË",
+  "ApplyHeader2": "MODEL",
+  "ApplyText1": "Nëse jeni të interesuar për përfaqësim komercial, ju lutemi dërgoni foto dhe CV në",
+  "ApplyText2": "info@modelkos.com",
+
+  "ContactInformation": {
+    "Header": "INFORMATAT PËR KONTAKT",
+    "FullNameLabel": "EMRI I PLOTË",
+    "FullNamePlaceholder": "Shkruani emrin e plotë këtu",
+    "AddressLabel": "ADRESA",
+    "AddressPlaceholder": "Shkruani adresën këtu",
+    "EmailLabel": "EMAIL",
+    "EmailPlaceholder": "Shkruani emailin këtu",
+    "ContactNumberLabel": "NUMRI I KONTAKTIT",
+    "ContactNumberPlaceholder": "Shkruani numrin e kontaktit këtu",
+    "MessageLabel": "MESAZHI",
+    "MessagePlaceholder": "Shkruani mesazhet, komentet që keni këtu..."
+  },
+
+  "Measurements": {
+    "Header": "MASAT",
+    "GenderLabel": "GJINIA",
+    "GenderPlaceholder": "Zgjidhni gjininë",
+    "GenderMale": "Mashkull",
+    "GenderFemale": "Femër",
+    "DOBLabel": "DATA E LINDJES",
+    "DOBPlaceholder": "DD/MM/VV",
+    "HeightLabel": "LARTËSIA",
+    "HeightPlaceholder": "psh (180)",
+    "BustLabel": "BUSTI",
+    "BustPlaceholder": "psh (20)",
+    "ClipLabel": "KLIPE",
+    "ClipPlaceholder": "psh (35)",
+    "HipsLabel": "BARKU",
+    "HipsPlaceholder": "psh (180)",
+    "WaistLabel": "MESI",
+    "WaistPlaceholder": "psh (20)",
+    "ShoeLabel": "KËMBA",
+    "ShoePlaceholder": "psh (35)",
+    "UploadImageLabel": "NGARKO IMAZHIN (Trupi i plotë)",
+    "UploadImagePlaceholder": "Ngarko imazhin deri në 35 MB"
+  },
+
+  "AdditionalInfo": {
+    "TermsAndConditions": "Duke e dërguar, unë pranoj të gjitha Termet & Kushtet",
+    "SubmitButton": "DËRGO"
+  }
+}
+  

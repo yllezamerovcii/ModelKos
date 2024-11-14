@@ -1,0 +1,292 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -370px;
+  width: 370px;
+  height: 100%;
+  background: #fff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  transition: left 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar.open {
+  left: 0; /* Slide in sidebar */
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 70px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-y: auto;
+}
+
+/* Ensure no overflow issues */
+.sidebar-content::before {
+  content: '';
+  display: block;
+  height: 1px; /* Clear the pseudo-element to handle overflow issues */
+}
+
+.header3 {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; 
+  padding-left: 12px;
+  margin-top: -10px;
+}
+
+.logo-container3 {
+  display: flex;
+  align-items: center; /* Center logo and text vertically */
+  gap: 5px; /* Space between image and text */
+  text-decoration: none; 
+  color: #000000;
+}
+
+.logo-container3 p {
+  font-size: 20px; /* Font size for the text inside the container */
+  margin: 0; /* Remove default margins */
+  text-decoration: none; 
+}
+
+.Logo3 {
+  height: 32px; /* Ensure both logos have the same height */
+  width: auto; /* Maintain aspect ratio */
+}
+
+.sidebar-content .menu-link {
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px; /* Set font size to 18px */
+  display: block; /* Make the links block elements to apply padding */
+  padding: 16px 20px; /* Add padding for better spacing */
+  position: relative; /* Position relative for the pseudo-element */
+  font-family: 'Montserrat', sans-serif;
+  border: none; /* Remove borders */
+}
+
+.sidebar-content .blog {
+  border-bottom: 1px solid #999797;
+}
+
+.sidebar-content a:hover {
+  padding-left: 30px; 
+}
+
+.sidebar-content .logo-container3:hover {
+  padding-left: 0; 
+}
+
+/* Tab button styles */
+.tab-btn {
+  background: none;
+  border: none;
+  font-size: 18px; /* Set font size to 18px */
+  font-family: 'Montserrat', sans-serif;
+  color: #000000;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between text and arrow */
+  margin: 0; /* Remove margin */
+  padding: 16px 20px; /* Initial padding */
+  position: relative; /* Position relative for the pseudo-element */
+  transition: padding-left 0.3s ease; /* Smooth transition for padding change */
+  text-decoration: none;
+}
+
+/* Arrow styling */
+.tab-btn::after {
+  content: '\25BD'; /* ▽ Downward triangle */ 
+  font-size: 18px; /* Same font size as button text */
+  color: #000000; /* Arrow color */
+  transition: transform 0.3s ease; /* Smooth transition for arrow */
+}
+
+/* Change arrow direction based on active state */
+.tab-btn.active::after {
+  content: '\25B3'; /* △ */
+}
+
+/* Hover effect to shift text and show arrow */
+.tab-btn:hover {
+  padding-left: 30px; /* Increase padding to shift text left */
+}
+
+.tab-btn:hover::after {
+  transform: translateX(10px); /* Shift arrow right on hover */
+}
+
+/* Tab content styles */
+.tab-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styles for links in tab-content */
+.tab-content a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 13px; /* Set font size to 13px */
+  padding: 7px 57px; /* Add padding for better spacing */
+  position: relative; /* Position relative for the pseudo-element */
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Ensure hover effect for tab-content links */
+.tab-content a:hover {
+  color: white;
+}
+
+.tab-content a:last-child {
+  border: none; 
+}
+/* Sidebar Footer Styles */
+.sidebar-footerr {
+  margin-top: 25px;
+  padding: 15px 10px;
+  display: flex;
+  justify-content: center;
+  height: 35px;
+  background-color: #fff;
+  color: black;
+}
+
+.sidebar-footerr a {
+  text-decoration: none;
+  background-color: #fff;
+  width: 120px;
+  font-size: 18px; /* Maintain font size for footer buttons */
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  border: none; /* Remove default button border */
+  color: black;
+  margin-top: 6px;
+}
+
+.sidebar-footerr a:hover {
+  padding-left: 0; /* Increase padding to shift text left */
+}
+
+
+.sidebar-footerr button {
+  background-color: #fff;
+  width: 120px;
+  font-size: 18px; /* Maintain font size for footer buttons */
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  border: none; /* Remove default button border */
+  color: black;
+}
+
+.side-footerr button {
+  background-color: #fff;
+  color: black;
+  border: none;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.side-footerr button:hover{
+  color: rgb(255, 255, 255);
+}
+
+.last-footer {
+  margin-top: 1vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 3px;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  color: #999797;
+}
+
+@media screen and (max-width: 450px) {
+  .sidebar-footerr {
+    padding: 2.222vw 1.111vw; /* Adjust footer padding */
+    height: 30px; /* Adjust footer height */
+  }
+
+  .sidebar-footerr button {
+    font-size: 16px; /* Adjust font size */
+  }
+
+  .last-footer {
+    font-size: 13px; /* Reduce footer text size */
+    // padding: 0px 5px; /* Adjust padding */
+  }
+
+  .side-footerr button{
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .sidebar {
+    width: 90%; /* Make the sidebar take the full width */
+    left: -100%; /* Adjust the initial position off-screen */
+  }
+
+  .sidebar.open {
+    left: 0; /* Slide in the sidebar */
+  }
+
+  .close-btn {
+    font-size: 60px; /* Adjust the size of the close button */
+  }
+
+  .sidebar-content a {
+    font-size: 16px; /* Decrease font size for better fit */
+    padding: 12px 15px; /* Adjust padding for links */
+  }
+
+  .tab-btn {
+    font-size: 16px; /* Decrease font size for better fit */
+    padding: 12px 15px; /* Adjust padding for tab buttons */
+  }
+
+  .tab-content a {
+    font-size: 12px; /* Decrease font size for tab content links */
+    padding: 5px 45px; /* Adjust padding for better fit */
+  }
+
+  .sidebar-footerr {
+    padding: 10px 5px; /* Adjust footer padding */
+    height: 30px; /* Adjust footer height */
+  }
+
+  .sidebar-footerr button {
+    width: 100px; /* Reduce button width */
+    font-size: 12px; /* Adjust font size */
+  }
+
+  .last-footer {
+    font-size: 12px; /* Reduce footer text size */
+    padding: 0px 5px; /* Adjust padding */
+  }
+
+  .side-footerr button{
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 373px) {
+  .sidebar-footerr button {
+    font-size: 3.4vw;
+  }
+  .side-footerr button {
+    font-size: 3.3vw;
+  }
+}

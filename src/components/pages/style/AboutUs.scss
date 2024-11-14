@@ -1,0 +1,465 @@
+.carousel-containerr{
+  padding-top: 6vw;
+  padding-bottom: 6vw;
+}
+
+.carousel-slidee {
+  display: flex;
+  flex-direction: row; /* Align children horizontally */
+  justify-content: space-between; /* Distribute space between text and images */
+  align-items: center;
+  width: 100%;
+}
+
+.text-contentt {
+  flex: 40%; /* Allow text content to take up available space */
+  text-align: left;
+  margin-left: 9.9vw; /* Convert 9.9% to vw */
+  font-family: 'Montserrat', sans-serif;
+  margin-top: -5.5vh;
+}
+
+
+.TheFirstTitlee {
+  font-size: 5.15vw;
+  font-weight: normal;
+  margin-left: 0vw;
+  margin-bottom: 0.6vw;
+  font-family: 'Brown Sugar', sans-serif;
+}
+
+
+.TheTextt {
+  font-size: 0.775vw;
+  color: rgb(23, 23, 23);
+  line-height: 2.65;
+  padding-right: 6.5vw;
+  padding-top: 1.2vw;
+}
+
+.right-contentt {
+  flex: 60%; /* Allow images to take up available space */
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center;
+  position: relative; /* Establish positioning context */
+}
+
+.slide-logoo {
+  width: 9.26vw;               
+  height: auto;                
+  position: absolute;          
+  top: 9.2vh;                  
+  left: 0.4vw;                
+  transform: translateY(-50%) rotate(0deg); /* Center vertically */
+  z-index: 3;
+}
+
+.slide-arroww {
+  width: 2.59vw; 
+  height: 1vw; 
+  position: absolute;
+  top: 3.7vw;
+  left: 3.8vw; 
+  z-index: 4;
+}
+
+.images-roww {
+  display: flex; /* Arrange images in a row */
+  gap: 1.11vw; /* Convert 20px to vw */
+  padding-top: 2.78vw; /* Convert 50px to vw */
+  padding-bottom: 5.56vw; /* Convert 100px to vw */
+  padding-left: 0.3vw; /* Convert 20px to vw */
+  overflow-y: hidden; 
+}
+
+
+.image-itemm:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #dedcdc; // Light gray border
+  padding: 0.98vw;
+  background-color: #fff; // Background color for contrast
+  text-align: center;
+  color: rgb(29, 29, 29);
+  z-index: 2;
+  position: relative; /* Maintain relative positioning */
+  top: 1vw;   /* Convert 21px to vw */
+  left: 1.5vw;  
+}
+
+.image-itemm:hover {
+  transform: scale(1.1); /* Slightly larger on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for better visibility */
+}
+
+.image-itemm:last-child {
+  border: 2px solid #1f1e1e; /* Different border color if needed */
+  background-color: #1f1e1e; /* Background color for contrast */
+  color: #fff;
+  padding: 0.87vw;
+  z-index: 1; /* Ensure this is below other items */
+  position: relative; /* Maintain relative positioning */
+  top: 10.5vh;  /* Convert 92px to vh */
+  left: -8.5vw;
+  transform: translateY(0); /* Reset vertical alignment adjustments */
+
+  .image-namee {
+    font-size: 1.31vw;       
+    padding-top: 0.25vw;    
+  }
+}
+
+.image-itemm:last-child:hover {
+  transform: scale(1.1); /* Scale up on hover */
+  z-index: 3; /* Bring to the front */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add shadow for better visibility */
+}
+
+.slide-imagee {
+  width: 22.3vw;  /* Convert 415px to vw */
+}
+
+.image-infoo {
+  text-align: center;
+}
+
+.image-rolee {
+  font-family: 'Montserrat', sans-serif;
+  white-space: normal; /* Allow text to wrap naturally */
+  word-break: break-word; /* Break long words */
+  overflow-wrap: break-word; /* Ensure words break correctly */
+  font-size: 0.78svw;       /* Font size in vw */
+  word-spacing: 0.55vw; 
+}
+
+.image-namee {
+  font-size: 1.31vw;       
+  padding-top: 0.5vw;    
+}
+
+.image-datee {
+  font-size: 1.15vw;
+  padding-top: 3px;
+  margin-bottom: 1vw;
+}
+.carousel-dots {
+  display: flex;
+  gap: 0.7vw; /* Space between dots */
+  margin-top: -4vw; /* Space above dots */
+  margin-left: -44vw; /* Adjust margin in vw */
+}
+
+.dott {
+  width: 0.5vw; /* Adjust size as needed */
+  height: 0.5vw;
+  border-radius: 50%;
+  background-color: rgb(212, 212, 212);
+  cursor: pointer;
+  margin-top: 1.7vw;
+}
+
+.dott.active {
+  background-color: black; /* Color for active dot */
+  width: 0.7vw;
+  height: 0.7vw;
+  margin-top: 1.6vw;
+}
+
+@media (max-width: 1300px){
+  .carousel-slidee {
+    display: block;
+    align-items: center;
+    width: 100%;
+  }
+  .text-contentt {
+    flex: 100%; /* Allow text content to take up available space */
+    text-align: center;
+    margin-left: 20.5vw; /* Convert 9.9% to vw */
+    margin-right: 18.5vw;
+    margin-top: 0vh;
+  }
+  .TheFirstTitlee {
+    font-size: 4vw;
+    font-weight: normal;
+    margin-left: 0vw;
+    margin-bottom: 0.56vw;
+  }
+  .TheTextt {
+    font-size: 1.1vw;
+    color: rgb(23, 23, 23);
+    line-height: 2.4;
+    padding-right: 6.1vw;
+    padding-top: 0vw;
+  }
+  
+  .image-itemm:first-child {
+    padding: 0.98vw;
+    top: 0vw;   /* Convert 21px to vw */
+    left: 9vw;  
+  }
+  .image-itemm:last-child {
+    top: 7vh;  /* Convert 92px to vh */
+    left: -8.4vw;
+  }
+  .slide-logoo {
+    width: 9.26vw;                      
+    top: 7vh;                  
+    left: 30.8vw;                
+  }
+  .slide-arroww {
+    top: 2.8vw;
+    left: 34.5vw; 
+  }
+  .carousel-dots {
+    display: flex;
+    margin-top: -4.5vw; /* Space above dots */
+    margin-left: -29vw; /* Adjust margin in vw */
+  }
+}
+
+@media (max-width: 1020px) {
+  .text-contentt {
+    margin-left: 6vw; /* Convert 9.9% to vw */
+    margin-right: 0vw;
+    margin-top: 0vh;
+  }
+  .TheTextt {
+    font-size: 1.3vw;
+    line-height: 2.4;
+    padding-right: 6.1vw;
+    padding-top: 0vw;
+  }
+  .slide-logoo {                     
+    top: 6.3vh;                  
+    left: 31vw;                
+  }
+}
+
+@media (max-width: 900px) {
+  .carousel-containerr{
+    padding-top: 65px;
+  }  
+  .TheTextt {
+    font-size: 1.5vw;
+    line-height: 2;
+  }
+  .image-itemm:first-child {
+    padding: 0.98vw;
+    top: 0vw;   /* Convert 21px to vw */
+    left: 0vw;  
+  }
+  .image-itemm:first-child:hover {
+    transform: scale(1.05); /* Reduce scale on smaller screens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .image-itemm:last-child {
+    top: 0vh;  /* Convert 92px to vh */
+    left: 0vw;
+  }
+  .image-itemm:last-child:hover {
+    transform: scale(1.05); /* Reduce scale on smaller screens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-right: 10px;
+  }
+  .slide-logoo {
+    width: 9.26vw;                      
+    top: 5vh;                  
+    left: 22vw;                
+  }
+  .slide-arroww {
+    top: 2.8vw;
+    left: 25.5vw; 
+  }
+  .carousel-dots {
+    display: flex;
+    gap: 1vw; /* Space between dots */
+    margin-top: -4vw; /* Space above dots */
+    margin-left: 0vw; /* Adjust margin in vw */
+  }
+  .dott{
+    width: 8px;
+    height: 8px;
+  }     
+  .dott.active {
+    width: 10px; 
+    height: 10px;
+  }
+  .image-rolee { 
+    font-size: 1vw;
+    word-spacing: 0.485vw; 
+  }
+  .image-namee {
+    font-size: 1.5vw;         
+  }
+
+  .image-itemm:last-child {
+    .image-namee {
+      font-size: 1.5vw;       
+    }
+  }
+  
+  .image-datee {
+    font-size: 1.4vw;
+    padding-top: 3px;
+    margin-bottom: 1vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .TheTextt {
+      font-size: 2vw;
+      line-height: 2;
+  }
+  .slide-imagee {
+    width: 30vw;  /* Convert 415px to vw */
+    height: 24vw; /* Convert 370px to vw */
+  }
+  .slide-logoo {
+    width: 12vw;                      
+    top: 4.5vh;                  
+    left: 12.5vw;                
+  }
+  .slide-arroww {
+    top: 2.8vw;
+    left: 17.8vw; 
+  }
+  .image-rolee { 
+    font-size: 1.3vw;
+    word-spacing: 0.485vw; 
+  } 
+  .image-namee {
+    font-size: 1.8vw;         
+  }
+  .image-itemm:last-child {
+    .image-namee {
+      font-size: 1.8vw;       
+    }
+  }  
+  .image-datee {
+    font-size: 1.7vw;
+    padding-top: 3px;
+    margin-bottom: 1vw;
+  }
+  .carousel-dots {
+    display: flex;
+    gap: 1vw; /* Space between dots */
+    margin-top: -4vw; /* Space above dots */
+    margin-left: 0vw; /* Adjust margin in vw */
+  }
+}
+
+@media (max-width: 500px){
+  .TheFirstTitlee {
+    font-size: 8vw;
+  }
+  .TheTextt {
+      font-size: 2.9vw;
+      line-height: 2;
+  }
+  .slide-logoo, .slide-arroww{
+    display: none;
+  }
+  .images-roww {
+    display: flex; /* Arrange items in a column */
+    flex-direction: column; /* Stack items vertically */
+    gap: 10px; /* Space between items */
+    width: 70%;
+    overflow: hidden;
+  }
+  .image-itemm:last-child:hover {
+    margin-right: 0px;
+  }
+  .slide-imagee {
+    width: 100%; /* Make image take full width of its container */
+    height: 170px; /* Maintain aspect ratio */
+    object-fit: cover;
+  }
+  .image-rolee { 
+    font-size: 2.6vw;
+    word-spacing: 2vw; 
+  }
+  
+  .image-namee {
+    font-size: 3vw;         
+  }
+
+  .image-itemm:last-child {
+    .image-namee {
+      font-size: 3vw;       
+    }
+  }
+  
+  .image-datee {
+    font-size: 2.8vw;
+    padding-top: 3px;
+    margin-bottom: 1vw;
+  }
+  .carousel-dots {
+    gap: 1.3vw; /* Space between dots */
+  }
+  .dott{
+    width: 9px;
+    height: 9px;
+  }     
+  .dott.active {
+    width: 11px; 
+    height: 11px;
+    margin-top: 7.5px;
+  }
+}
+
+@media (max-width: 500px){   
+  .dott.active {
+    margin-top: 6.5px;
+  }
+}
+
+@media (max-width: 350px){
+  .TheFirstTitlee {
+    font-size: 10vw;
+  }
+  .TheTextt {
+      font-size: 4vw;
+      line-height: 2;
+  }
+  .images-roww {
+    display: flex; /* Arrange items in a column */
+    flex-direction: column; /* Stack items vertically */
+    gap: 10px; /* Space between items */
+    width: 100%;
+  }
+  .slide-imagee {
+    width: 100%; /* Make image take full width of its container */
+    height: 150px; /* Maintain aspect ratio */
+    object-fit: cover;
+  }
+  .image-rolee { 
+    font-size: 3.4vw;
+    word-spacing: 3vw; 
+  }
+  
+  .image-namee {
+    font-size: 4.2vw;         
+  }
+  .image-itemm:last-child {
+    .image-namee {
+      font-size: 4.2vw;       
+    }
+  }
+  .image-datee {
+    font-size: 4.1vw;
+    padding-top: 3px;
+    margin-bottom: 1vw;
+  }   
+  .dott{
+    width: 8px;
+    height: 8px;
+  }     
+  .dott.active {
+    width: 9px; 
+    height: 9px;
+    margin-top: 5.5px;
+  }
+}
